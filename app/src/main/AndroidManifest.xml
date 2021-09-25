@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
-            android:name=".AddNewQuestionActivity"
+            android:name=".question.AddNewQuestionActivity"
             android:exported="true" />
         <activity
-            android:name=".QuestionsActivity"
+            android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

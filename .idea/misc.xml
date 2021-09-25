@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/layout/activity_add_new_question.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_questions.xml" value="0.28099517822265624" />
+        <entry key="app/src/main/res/layout/item_question.xml" value="0.5" />
       </map>
     </option>
   </component>

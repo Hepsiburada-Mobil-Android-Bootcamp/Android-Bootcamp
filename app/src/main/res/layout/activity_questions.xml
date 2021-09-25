@@ -5,7 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".QuestionsActivity">
+    tools:context=".question.QuestionsActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_question"
+        android:layout_width="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_question"
+        android:layout_height="match_parent"/>
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
