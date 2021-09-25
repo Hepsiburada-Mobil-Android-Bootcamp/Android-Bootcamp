@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "125156188415",
+    "project_id": "camp-c7843",
+    "storage_bucket": "camp-c7843.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125156188415:android:b56807c25e3a557b966cca",
+        "android_client_info": {
+          "package_name": "com.android.camp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125156188415-74lme1d41oe32489f6p5ppb13k74l58e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOEwoUXsWjX8IBB7XgLKS1FEfnPQsmhbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125156188415-74lme1d41oe32489f6p5ppb13k74l58e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
