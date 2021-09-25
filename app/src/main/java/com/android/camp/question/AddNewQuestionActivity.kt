@@ -11,6 +11,8 @@ import com.android.camp.R
 import com.android.camp.data.CampHelper
 import com.android.camp.data.model.Answer
 import com.android.camp.data.model.Question
+import com.google.firebase.FirebaseApp
+import com.google.firebase.firestore.FirebaseFirestore
 
 class AddNewQuestionActivity : AppCompatActivity() {
     private val editTextQuestion by lazy { findViewById<EditText>(R.id.edit_text_question) }
@@ -23,6 +25,8 @@ class AddNewQuestionActivity : AppCompatActivity() {
     private val buttonSave by lazy { findViewById<View>(R.id.button_save) }
 
     private var secilenCevap: String? = null
+
+    private var firestore: FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +51,9 @@ class AddNewQuestionActivity : AppCompatActivity() {
             Log.d("AddNewQuestionActivity", "seçilen şık: $secilenCevap")
         }
 
+        FirebaseApp.initializeApp(this)
+
+        firestore = FirebaseFirestore.getInstance()
     }
 
     private fun save() {
@@ -65,7 +72,14 @@ class AddNewQuestionActivity : AppCompatActivity() {
         )
 
         CampHelper.list.add(question)
-        finish()
+
+        firestore?.collection("questions")?.add(question)
+            ?.addOnSuccessListener {
+                finish()
+            }
+            ?.addOnFailureListener {
+                Toast.makeText(this, "Yeni Soru Eklenemedi..", Toast.LENGTH_LONG).show()
+            }
     }
 
     fun EditText.isValid(): Boolean {
