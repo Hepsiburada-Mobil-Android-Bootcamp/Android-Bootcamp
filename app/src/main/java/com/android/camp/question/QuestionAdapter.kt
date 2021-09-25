@@ -1,5 +1,6 @@
 package com.android.camp.question
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,13 +21,14 @@ class QuestionAdapter(private val list: ArrayList<Question>) :
         private val dRadioButton by lazy { itemView.findViewById<RadioButton>(R.id.radio_button_d) }
         private val eRadioButton by lazy { itemView.findViewById<RadioButton>(R.id.radio_button_e) }
 
+        @SuppressLint("SetTextI18n")
         fun bind(question: Question) {
             questionTextView.text = question.question
-            aRadioButton.text = "${question.answers[0].type}: ${question.answers[0].answer}"
-            bRadioButton.text = "${question.answers[1].type}: ${question.answers[1].answer}"
-            cRadioButton.text = "${question.answers[2].type}: ${question.answers[2].answer}"
-            dRadioButton.text = "${question.answers[3].type}: ${question.answers[3].answer}"
-            eRadioButton.text = "${question.answers[4].type}: ${question.answers[4].answer}"
+            aRadioButton.text = "${question.answers?.get(0)!!.type}: ${question.answers.get(0)!!.answer}"
+            bRadioButton.text = "${question.answers.get(1)?.type}: ${question.answers?.get(1)?.answer}"
+            cRadioButton.text = "${question.answers.get(2)?.type}: ${question.answers?.get(2)?.answer}"
+            dRadioButton.text = "${question.answers.get(3)?.type}: ${question.answers?.get(3)?.answer}"
+            eRadioButton.text = "${question.answers.get(4)?.type}: ${question.answers?.get(4)?.answer}"
         }
     }
 

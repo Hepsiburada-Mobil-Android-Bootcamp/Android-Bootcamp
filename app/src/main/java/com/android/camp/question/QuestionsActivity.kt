@@ -9,9 +9,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 import com.android.camp.data.CampHelper
+import com.android.camp.data.model.Question
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.firestore.FirebaseFirestore
 
 class QuestionsActivity : AppCompatActivity() {
+
+    private var firestore:FirebaseFirestore? = null
 
     private val fab by lazy { findViewById<View>(R.id.fab) }
     private val recyclerViewQuestion by lazy { findViewById<RecyclerView>(R.id.recycler_view_question) }
@@ -26,6 +30,9 @@ class QuestionsActivity : AppCompatActivity() {
         Log.d("QuestionsActivity", "onCreate")
 
         initQuestions()
+
+        firestore = FirebaseFirestore.getInstance()
+        bindQuestions()
     }
 
     private fun initQuestions() {
@@ -33,14 +40,17 @@ class QuestionsActivity : AppCompatActivity() {
     }
 
     private fun bindQuestions() {
-        recyclerViewQuestion.adapter = QuestionAdapter(CampHelper.list)
+        firestore?.collection("questions")?.addSnapshotListener { value, error ->
+            value?.toObjects(Question::class.java).let { questions ->
+                recyclerViewQuestion.adapter = QuestionAdapter(questions as ArrayList<Question>)
+            }
+        }
     }
 
     override fun onResume() {
         super.onResume()
         Log.d("QuestionsActivity", "onResume")
         Log.d("QuestionsActivity", "list: ${CampHelper.list.size} ")
-        bindQuestions()
     }
 
     override fun onStart() {
