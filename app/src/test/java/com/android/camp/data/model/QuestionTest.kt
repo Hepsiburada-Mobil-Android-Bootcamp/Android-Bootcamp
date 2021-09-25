@@ -30,13 +30,4 @@ class QuestionTest {
         assertFalse(question.correctAnswer == "D")
         assertFalse(question.correctAnswer == "E")
     }
-
-    @Test
-    fun countAnswer() {
-        // success scenario
-        assertTrue(question.countAnswer() == 5)
-
-        // fail scenario
-        assertFalse(question.countAnswer() == 2)
-    }
 }

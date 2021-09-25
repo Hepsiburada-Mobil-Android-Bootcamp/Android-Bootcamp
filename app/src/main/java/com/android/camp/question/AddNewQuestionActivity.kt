@@ -12,6 +12,7 @@ import com.android.camp.data.CampHelper
 import com.android.camp.data.model.Answer
 import com.android.camp.data.model.Question
 import com.google.firebase.FirebaseApp
+import com.google.firebase.FirebaseOptions
 import com.google.firebase.firestore.FirebaseFirestore
 
 class AddNewQuestionActivity : AppCompatActivity() {
@@ -50,8 +51,6 @@ class AddNewQuestionActivity : AppCompatActivity() {
 
             Log.d("AddNewQuestionActivity", "seçilen şık: $secilenCevap")
         }
-
-        FirebaseApp.initializeApp(this)
 
         firestore = FirebaseFirestore.getInstance()
     }

@@ -1,12 +1,10 @@
 package com.android.camp.data.model
 
-data class Question(
-    val question: String,
-    val answers: ArrayList<Answer>,
-    val correctAnswer: String
-) {
+import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-    fun countAnswer(): Int {
-        return answers.count()
-    }
-}
+data class Question(
+    val question: String? = "",
+    val answers: ArrayList<Answer>? = arrayListOf(),
+    val correctAnswer: String? = ""
+)
