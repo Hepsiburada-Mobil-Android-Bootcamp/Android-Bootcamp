@@ -1,0 +1,9 @@
+* kotlin
+* firebase - firestore => Akın
+* Recycler View => Serhad Mert
+* Material Design
+* Unit Test => Ayşe
+* Activity Lifecycle, Intent => Ayşe
+* Gradle, Dependencies, Build Variants
+* Layout: Contraint Layout
+* View: Button, TextView, EditText, RadioGroup, RadioButton, ImageView
