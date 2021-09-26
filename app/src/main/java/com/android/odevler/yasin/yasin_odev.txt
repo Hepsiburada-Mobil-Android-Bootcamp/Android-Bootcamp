@@ -1,0 +1,9 @@
+26.09.2021
+
+AClass oluşturalım.
+en az 4 tane property'i olsun.
+Test classını da yazalım.
+bir tanede fonksiyon olsun. bunun da testini yazalım.
+
+
+

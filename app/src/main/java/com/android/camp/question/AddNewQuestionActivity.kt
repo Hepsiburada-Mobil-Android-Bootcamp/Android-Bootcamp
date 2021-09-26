@@ -91,14 +91,18 @@ class AddNewQuestionActivity : AppCompatActivity() {
     }
 
     private fun isValid(): Boolean {
-        var isValid: Boolean
+        var isValid = false
 
-        isValid = editTextQuestion.isValid()
-        isValid = editTextA.isValid()
-        isValid = editTextB.isValid()
-        isValid = editTextC.isValid()
-        isValid = editTextD.isValid()
-        isValid = editTextE.isValid()
+        arrayListOf(
+            editTextQuestion,
+            editTextA,
+            editTextB,
+            editTextC,
+            editTextD,
+            editTextE
+        ).forEach { editText ->
+            isValid = editText.isValid() && isValid
+        }
 
         if (secilenCevap.isNullOrEmpty()) {
             Toast.makeText(this, "doğru olan şık seçilmelidir.", Toast.LENGTH_LONG).show()

@@ -22,20 +22,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("name", "denmee 12345")
             startActivity(intent)
         }
-
-        textView.text = BuildConfig.APPLICATION_ID
-
-        val sayi = "123asas".inteCevir()
-
-        Log.i("CampDenemTest", "onCreate => sayi: $sayi")
-
-        if (sayi % 2 == 0) {
-            Log.d("CampDenemTest", "onCreate => çift sayı")
-        } else {
-            Log.e("CampDenemTest", "onCreate => tek sayı")
-        }
-
-
     }
 }
 
