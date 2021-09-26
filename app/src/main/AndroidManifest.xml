@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name=".exam.AddNewExamActivity"
+            android:exported="true" />
+        <activity
             android:name=".question.AddNewQuestionActivity"
             android:exported="true" />
         <activity

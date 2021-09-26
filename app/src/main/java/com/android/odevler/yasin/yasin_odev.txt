@@ -1,9 +1,27 @@
 26.09.2021
 
+1.ödev
+
 AClass oluşturalım.
 en az 4 tane property'i olsun.
 Test classını da yazalım.
 bir tanede fonksiyon olsun. bunun da testini yazalım.
 
+2. ödev
+
+bunları firestore yazalım.
+
+AddNewAActivity
+
+firestore.collection("isimsoyisim").add(A)
 
 
+AListActivity
+
+bunları listenecek.
+
+firestore.collection("isimsoyisim").addSnasphoListener {
+....
+}
+
+----------------------------------------------------------
