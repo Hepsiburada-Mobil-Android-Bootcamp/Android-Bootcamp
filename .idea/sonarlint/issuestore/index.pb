@@ -27,3 +27,11 @@ p
 @app/src/main/java/com/android/camp/question/QuestionsActivity.kt,0/d/0d13b801f8ea37dfaddbb41f414571100b66fee3
 n
 >app/src/main/java/com/android/camp/question/QuestionAdapter.kt,6/8/68386a794acc55c88a1d0aff99e8fc2f87f5b72e
+m
+=app/src/main/java/com/android/camp/exam/AddNewExamActivity.kt,8/8/88fc77635d61d2ac364a54b75804ef498d3f48c7
+e
+5app/src/main/java/com/android/camp/data/model/Exam.kt,d/b/db6ccda41a771bbe3f951482853cbd764013f544
+i
+9app/src/main/java/com/android/camp/exam/ExamViewHolder.kt,a/5/a52d6f97fc3e93cf7d618d2ed5f9b6347604f55d
+f
+6app/src/main/java/com/android/camp/exam/ExamAdapter.kt,3/2/32665c6d1053deb6127496336153a30497429b7a

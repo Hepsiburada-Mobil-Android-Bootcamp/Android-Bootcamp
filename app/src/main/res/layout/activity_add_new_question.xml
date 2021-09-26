@@ -110,24 +110,6 @@
             app:layout_constraintStart_toEndOf="@+id/radio_group_d"
             app:layout_constraintTop_toTopOf="@+id/radio_group_d" />
 
-        <RadioButton
-            android:id="@+id/radio_group_e"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="E"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/radio_group_d"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group_d" />
-
-        <EditText
-            android:id="@+id/edit_text_e"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radio_group_e"
-            app:layout_constraintTop_toTopOf="@+id/radio_group_e" />
-
     </RadioGroup>
 
     <Button
