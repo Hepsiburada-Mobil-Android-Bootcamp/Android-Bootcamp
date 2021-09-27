@@ -1,5 +1,6 @@
 package com.android.odevler.abdulwahid.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -37,7 +38,9 @@ class AddNewSongActivity : AppCompatActivity() {
 
         fireStore.collection("abdulwahid").add(song).addOnSuccessListener {
             Toast.makeText(this, "Successful", Toast.LENGTH_LONG).show()
-        }.addOnFailureListener{
+            startActivity(Intent(this, SongListActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+            finish()
+        }.addOnFailureListener {
             Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()
         }
     }
@@ -52,10 +55,10 @@ class AddNewSongActivity : AppCompatActivity() {
     }
 
     private fun checkTime(): Boolean {
-        return if (tvYear.text.toString().toInt() > 2021){
+        return if (tvYear.text.toString().toInt() > 2021) {
             tvYear.error = "Welcome from future"
             false
-        } else{
+        } else {
             true
         }
     }

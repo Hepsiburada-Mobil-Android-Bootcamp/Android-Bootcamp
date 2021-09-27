@@ -15,4 +15,7 @@
     <string name="duration_time">Duration Time</string>
     <string name="year">Year</string>
     <string name="save">Save</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_song">Add Song</string>
+    <string name="delete_all">Delete All</string>
 </resources>
