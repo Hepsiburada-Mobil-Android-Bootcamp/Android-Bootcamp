@@ -1,19 +1,18 @@
 package com.android.odevler.abdulwahid.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 import com.android.odevler.abdulwahid.adapter.SongAdapter
 import com.android.odevler.abdulwahid.data.Song
-import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.ktx.toObjects
-import com.google.firebase.ktx.Firebase
+
 
 class SongListActivity : AppCompatActivity() {
 
@@ -24,12 +23,22 @@ class SongListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_song_list)
 
+        initRecyclerView()
         initData()
+    }
+
+    private fun initRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.addItemDecoration(
+            DividerItemDecoration(
+                recyclerView.context,
+                DividerItemDecoration.VERTICAL
+            )
+        )
     }
 
     private fun initData() {
-        fireStore.collection("abdulwahid").addSnapshotListener { value, error ->
+        fireStore.collection("abdulwahid").addSnapshotListener { value, _ ->
             value?.toObjects(Song::class.java).let {
                 recyclerView.adapter = SongAdapter(it as ArrayList<Song>)
             }
@@ -42,7 +51,7 @@ class SongListActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == R.id.menu_add_song){
+        if (item.itemId == R.id.menu_add_song) {
             startActivity(Intent(this, AddNewSongActivity::class.java))
         }
         return super.onOptionsItemSelected(item)

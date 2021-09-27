@@ -3,7 +3,4 @@
     <item
         android:id="@+id/menu_add_song"
         android:title="@string/add_song" />
-    <item
-        android:id="@+id/menu_delete_all_song"
-        android:title="@string/delete_all" />
 </menu>

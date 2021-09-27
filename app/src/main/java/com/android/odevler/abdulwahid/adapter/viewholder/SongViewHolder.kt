@@ -16,8 +16,13 @@ class SongViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(song: Song) {
         tvSongName.text = song.name
         tvArtistName.text = song.artist
-        tvDuration.text = song.duration.toString()
         tvYear.text = song.year.toString()
+
+        val duration = song.duration?.toInt()
+        val leftDuration = duration?.div(100)
+        val rightDuration = duration?.rem(100)
+        tvDuration.text =
+            itemView.resources.getString(R.string.duration, leftDuration, rightDuration)
     }
 
 }

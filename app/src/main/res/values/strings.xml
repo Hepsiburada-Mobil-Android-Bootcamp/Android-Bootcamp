@@ -18,4 +18,5 @@
     <string name="add_text">Add Text</string>
     <string name="add_song">Add Song</string>
     <string name="delete_all">Delete All</string>
+    <string name="duration">%d:%d</string>
 </resources>

@@ -38,7 +38,12 @@ class AddNewSongActivity : AppCompatActivity() {
 
         fireStore.collection("abdulwahid").add(song).addOnSuccessListener {
             Toast.makeText(this, "Successful", Toast.LENGTH_LONG).show()
-            startActivity(Intent(this, SongListActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+            startActivity(
+                Intent(
+                    this,
+                    SongListActivity::class.java
+                ).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            )
             finish()
         }.addOnFailureListener {
             Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()

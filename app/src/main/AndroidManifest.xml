@@ -11,15 +11,17 @@
         android:theme="@style/Theme.Camp">
         <activity
             android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
+            android:exported="true" >
+
         </activity>
         <activity
             android:name=".exam.AddNewExamActivity"
