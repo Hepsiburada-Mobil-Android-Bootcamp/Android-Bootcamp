@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_exam.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_question.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_user.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_main.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_rehber.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/rehber_items.xml" value="0.67" />
         <entry key="app/src/main/res/drawable/bg_exam_item.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_diamond.xml" value="0.223" />

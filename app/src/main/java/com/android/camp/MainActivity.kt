@@ -12,6 +12,7 @@ import com.android.camp.data.model.Exam
 import com.android.camp.exam.AddNewExamActivity
 import com.android.camp.exam.ExamAdapter
 import com.android.camp.question.QuestionsActivity
+import com.android.odevler.akinkeskinbas.HomeActivity
 import com.google.firebase.firestore.FirebaseFirestore
 
 
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         addNewExamFab.setOnClickListener {
-            val intent = Intent(this, AddNewExamActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
 
