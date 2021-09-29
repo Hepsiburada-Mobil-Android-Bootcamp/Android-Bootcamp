@@ -76,7 +76,10 @@ class AddNewFootballActivity : AppCompatActivity() {
 
         firestore?.collection("MehmetSerkanGuzel")?.add(football)?.addOnCompleteListener { task ->
            when (task.isSuccessful) {
-               true -> Log.d("AddNewFootballActivity", "Takım Başarıyla Eklendi..")
+               true -> {
+                   Log.d("AddNewFootballActivity", "Takım Başarıyla Eklendi..")
+                   finish()
+               }
                false -> Toast.makeText(this, "Takım Eklenemedi...", Toast.LENGTH_LONG).show()
            }
 
