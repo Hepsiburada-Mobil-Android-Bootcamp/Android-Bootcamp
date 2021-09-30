@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.camp">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.HospitalListActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="false" />
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.AddHospitalActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="false" />
         <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
@@ -20,13 +40,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
     </application>
 
 </manifest>
