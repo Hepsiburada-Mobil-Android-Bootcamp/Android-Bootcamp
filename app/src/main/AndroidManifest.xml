@@ -10,16 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
-            android:name=".exam.AddNewExamActivity"
+            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
             android:exported="true" />
+
+
         <activity
-            android:name=".question.AddNewQuestionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.QuestionsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
