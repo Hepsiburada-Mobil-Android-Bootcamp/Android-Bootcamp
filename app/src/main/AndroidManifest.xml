@@ -19,6 +19,9 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

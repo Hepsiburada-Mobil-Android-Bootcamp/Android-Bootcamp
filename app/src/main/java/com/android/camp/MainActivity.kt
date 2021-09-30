@@ -12,46 +12,43 @@ import com.android.camp.data.model.Exam
 import com.android.camp.exam.AddNewExamActivity
 import com.android.camp.exam.ExamAdapter
 import com.android.camp.question.QuestionsActivity
+import com.android.odevler.arifumutsepetci.data.model.Store
+import com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity
+import com.android.odevler.arifumutsepetci.data.store.StoreAdapter
 import com.google.firebase.firestore.FirebaseFirestore
 
 
 class MainActivity : AppCompatActivity() {
-    val addNewExamFab by lazy { findViewById<View>(R.id.fab) }
-    val recyclerViewExam by lazy { findViewById<RecyclerView>(R.id.recycler_view_exam) }
-
+    val addNewStoreFab by lazy { findViewById<View>(R.id.fab) }
+    val recyclerViewStore by lazy { findViewById<RecyclerView>(R.id.recycler_view_store) }
     var firestore:FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        addNewExamFab.setOnClickListener {
-            val intent = Intent(this, AddNewExamActivity::class.java)
+        addNewStoreFab.setOnClickListener {
+            val intent = Intent(this, AddNewStoreActivity::class.java)
             startActivity(intent)
         }
-
         firestore = FirebaseFirestore.getInstance()
-
-        initExams()
-        bindExams()
+        initStores()
+        bindStores()
     }
 
-    private fun initExams() {
-        recyclerViewExam.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+    private fun initStores() {
+        recyclerViewStore.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 
-    private fun bindExams() {
-        firestore?.collection("exam")?.orderBy("date")?.addSnapshotListener { value, error ->
-            val list = arrayListOf<Exam>()
-
+    private fun bindStores() {
+        firestore?.collection("arifumutsepetci")?.orderBy("date")?.addSnapshotListener { value, error ->
+            val list = arrayListOf<Store>()
             value?.forEach { queryDocumentSnapshot ->
-                queryDocumentSnapshot.toObject(Exam::class.java).also {  exam ->
-                    exam.id = queryDocumentSnapshot.id
-                    list.add(exam)
+                queryDocumentSnapshot.toObject(Store::class.java).also {  store ->
+                    store.id = queryDocumentSnapshot.id
+                    list.add(store)
                 }
             }
-
-            recyclerViewExam.adapter = ExamAdapter(this, list)
+            recyclerViewStore.adapter = StoreAdapter(this, list)
         }
     }
 }
