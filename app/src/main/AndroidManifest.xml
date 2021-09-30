@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.seymafirat.student.AddNewStudentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -19,7 +25,7 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.android.odevler.seymafirat.student.StudentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
