@@ -9,4 +9,15 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- İsmail Talha Dengiz, Ödev-1,2 -->
+    <string name="collection_name">talhadengiz</string>
+    <string name="student_number">Öğrenci Numarası</string>
+    <string name="lesson_name">Ders Adı</string>
+    <string name="midterm_point">Vize Notu</string>
+    <string name="final_point">Final Notu</string>
+    <string name="save">Kaydet</string>
+    <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
+    <string name="successful">Başarılı</string>
+    <!-- - - - - - - - - - - - - - - - -->
 </resources>
