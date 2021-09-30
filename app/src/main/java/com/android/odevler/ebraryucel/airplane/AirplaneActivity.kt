@@ -27,7 +27,6 @@ class AirplaneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_airplane)
-        //supportActionBar!!.hide()
 
         firestore= Firebase.firestore
 
