@@ -16,7 +16,7 @@ class ExampleUnitTest {
     }
 
 
-    @Test
+    /*@Test
     fun inteCevir_isCorrect() {
         // başarılı senaryo kontrolü
         assertTrue("deneme".inteCevir() == 0)
@@ -27,5 +27,5 @@ class ExampleUnitTest {
         assertFalse("deneme".inteCevir() == 1)
         assertFalse("123".inteCevir() == 0)
         assertFalse("10".inteCevir() == 0)
-    }
+    }*/
 }
