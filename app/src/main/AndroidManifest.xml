@@ -10,16 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
-            android:name=".exam.AddNewExamActivity"
+            android:name="com.android.odevler.ayse_senses.note.AddNoteActivity"
             android:exported="true" />
         <activity
-            android:name=".question.AddNewQuestionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.QuestionsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
