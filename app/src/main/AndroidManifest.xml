@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.NbaChampAdapter"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.NbaChampActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.AddNbaChampActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.NbaChamp"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity

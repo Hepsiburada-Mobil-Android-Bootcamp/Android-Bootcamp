@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.odevler.ozantakir.NbaChamp.NbaChampAdapter">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_view_adaptor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team_name_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/year_out"
+        app:layout_constraintEnd_toEndOf="@+id/year_out"
+        app:layout_constraintStart_toStartOf="@+id/year_out"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/year_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/mvp_out"
+        app:layout_constraintEnd_toEndOf="@+id/mvp_out"
+        app:layout_constraintStart_toStartOf="@+id/mvp_out"
+        app:layout_constraintTop_toBottomOf="@+id/team_name_out" />
+
+    <TextView
+        android:id="@+id/mvp_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/games_out"
+        app:layout_constraintEnd_toEndOf="@+id/games_out"
+        app:layout_constraintStart_toStartOf="@+id/games_out"
+        app:layout_constraintTop_toBottomOf="@+id/year_out" />
+
+    <TextView
+        android:id="@+id/games_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mvp_out" />
+</androidx.constraintlayout.widget.ConstraintLayout>
