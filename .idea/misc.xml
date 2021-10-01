@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout-ldltr/activity_add_new_car.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_add_new_car.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_add_new_question.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_car.xml" value="0.1" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_questions.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/item_car.xml" value="0.17889492753623187" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_add_new_question.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />

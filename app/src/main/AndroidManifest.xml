@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
+            android:exported="true" />
+        <activity
             android:name=".question.AddNewQuestionActivity"
             android:exported="true" />
         <activity
@@ -17,11 +20,15 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
     </application>
