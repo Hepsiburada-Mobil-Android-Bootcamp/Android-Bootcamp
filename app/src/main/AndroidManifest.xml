@@ -24,6 +24,12 @@
             android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
