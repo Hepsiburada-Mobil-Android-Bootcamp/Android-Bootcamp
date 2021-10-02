@@ -9,4 +9,14 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="content_description">Content Description</string>
+    <string name="song_name">Song Name</string>
+    <string name="artists_name">Artists Name</string>
+    <string name="duration_time">Duration Time</string>
+    <string name="year">Year</string>
+    <string name="save">Save</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_song">Add Song</string>
+    <string name="delete_all">Delete All</string>
+    <string name="duration">%d:%d</string>
 </resources>
