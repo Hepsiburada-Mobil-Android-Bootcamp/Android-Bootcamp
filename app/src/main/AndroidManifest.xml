@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.AddNbaChampActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.NbaChampsListActivity"
+            android:exported="true" />
+
+        <activity
             android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
             android:exported="true" />
         <activity
