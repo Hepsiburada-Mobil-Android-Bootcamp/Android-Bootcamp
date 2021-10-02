@@ -16,6 +16,12 @@
             android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
+            android:exported="true">
+        <activity
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
         <activity

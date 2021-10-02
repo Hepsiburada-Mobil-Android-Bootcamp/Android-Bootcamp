@@ -29,6 +29,12 @@
         <entry key="app/src/main/res/layout/item_exam.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_question.xml" value="0.5" />
         <entry key="app/src/main/res/layout/item_song.xml" value="0.1" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_new_book.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_book_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/item_book.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/lenovo/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/item_question.xml" value="0.20520833333333333" />
+
+
       </map>
     </option>
   </component>
