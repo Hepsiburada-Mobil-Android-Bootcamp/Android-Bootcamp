@@ -20,11 +20,6 @@ class ExamAdapter(private val context: Context, private val list: ArrayList<Exam
 
     override fun onBindViewHolder(holder: ExamViewHolder, position: Int) {
         holder.bind(list[position])
-        holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context, QuestionsActivity::class.java).apply {
-                putExtra("EXAM_ID", list[position].id)
-            })
-        }
     }
 
     override fun getItemCount() = list.size
