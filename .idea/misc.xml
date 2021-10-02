@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/app/src/main/res/layout/activity_paper_list.xml" value="0.13903985507246377" />
+        <entry key="..\:/AndroidProjects/app/src/main/res/layout/activity_questions.xml" value="0.1381340579710145" />
         <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_new_exam.xml" value="0.2125" />
         <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_new_question.xml" value="0.18432971014492755" />
         <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_paper.xml" value="0.1" />
