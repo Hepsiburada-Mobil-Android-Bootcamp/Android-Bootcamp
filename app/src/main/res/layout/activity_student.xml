@@ -11,6 +11,7 @@
         android:id="@+id/recycler_view_student"
         android:layout_width="match_parent"
         tools:listitem="@layout/item_student"
+        tools:itemCount="5"
         android:layout_height="match_parent"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/ekle"
