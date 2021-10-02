@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -21,6 +24,7 @@
         <activity
             android:name="com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity"
             android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
