@@ -6,49 +6,48 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.data.model.Exam
+import com.android.camp.databinding.ActivityMainBinding
 import com.android.camp.exam.AddNewExamActivity
 import com.android.camp.exam.ExamAdapter
 import com.android.camp.question.QuestionsActivity
-import com.android.odevler.arifumutsepetci.data.model.Store
-import com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity
-import com.android.odevler.arifumutsepetci.data.store.StoreAdapter
 import com.google.firebase.firestore.FirebaseFirestore
 
-
 class MainActivity : AppCompatActivity() {
-    val addNewStoreFab by lazy { findViewById<View>(R.id.fab) }
-    val recyclerViewStore by lazy { findViewById<RecyclerView>(R.id.recycler_view_store) }
     var firestore:FirebaseFirestore? = null
+    var binding:ActivityMainBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        addNewStoreFab.setOnClickListener {
-            val intent = Intent(this, AddNewStoreActivity::class.java)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding?.fab?.setOnClickListener {
+            val intent = Intent(this, AddNewExamActivity::class.java)
             startActivity(intent)
         }
+
         firestore = FirebaseFirestore.getInstance()
-        initStores()
-        bindStores()
+
+        bindExams()
     }
 
-    private fun initStores() {
-        recyclerViewStore.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-    }
+    private fun bindExams() {
+        firestore?.collection("exam")?.orderBy("date")?.addSnapshotListener { value, error ->
+            val list = arrayListOf<Exam>()
 
-    private fun bindStores() {
-        firestore?.collection("arifumutsepetci")?.orderBy("date")?.addSnapshotListener { value, error ->
-            val list = arrayListOf<Store>()
             value?.forEach { queryDocumentSnapshot ->
-                queryDocumentSnapshot.toObject(Store::class.java).also {  store ->
-                    store.id = queryDocumentSnapshot.id
-                    list.add(store)
+                queryDocumentSnapshot.toObject(Exam::class.java).also {  exam ->
+                    exam.id = queryDocumentSnapshot.id
+                    list.add(exam)
                 }
             }
-            recyclerViewStore.adapter = StoreAdapter(this, list)
+
+            binding?.model = MainViewModel().apply {
+                exams.addAll(list)
+            }
         }
     }
 }
