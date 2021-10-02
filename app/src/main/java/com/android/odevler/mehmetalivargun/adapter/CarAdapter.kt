@@ -13,7 +13,7 @@ class CarAdapter(private val context:Context,private val cars:ArrayList<Car>):Re
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
       return CarViewHolder(
-          LayoutInflater.from(parent.context).inflate(R.layout.item_car,parent,false))
+          LayoutInflater.from(parent.context).inflate(R.layout.item_vehicle,parent,false))
     }
 
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {

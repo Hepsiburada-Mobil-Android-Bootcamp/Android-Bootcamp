@@ -9,7 +9,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_car"
         android:layout_width="match_parent"
-        tools:listitem="@layout/item_car"
+        tools:listitem="@layout/item_vehicle"
         android:layout_height="match_parent"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
