@@ -11,6 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
+
+        <activity
+            android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
@@ -55,6 +59,12 @@
 
         <activity
             android:name=".login.LoginActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.edakuntalp.player.PlayerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
