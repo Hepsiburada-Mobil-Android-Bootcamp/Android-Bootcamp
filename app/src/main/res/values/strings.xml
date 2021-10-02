@@ -19,4 +19,5 @@
     <string name="add_song">Add Song</string>
     <string name="delete_all">Delete All</string>
     <string name="duration">%d:%d</string>
+    <string name="finish_exam">Sınavı Sonlandır</string>
 </resources>
