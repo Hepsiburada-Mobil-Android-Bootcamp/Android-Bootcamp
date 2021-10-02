@@ -51,6 +51,18 @@
 
         </activity>
         <activity
+            android:name="com.android.odevler.tahaarican.user.UserActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.odevler.tahaarican.user.AddNewUserActivity"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -72,11 +84,7 @@
         <activity
             android:name="com.android.odevler.edakuntalp.player.PlayerActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
