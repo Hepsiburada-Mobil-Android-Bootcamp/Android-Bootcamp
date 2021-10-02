@@ -18,6 +18,12 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
+            android:exported="true" />
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -27,7 +33,7 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
+            android:name=".login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +41,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
