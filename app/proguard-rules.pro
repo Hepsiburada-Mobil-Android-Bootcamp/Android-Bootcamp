@@ -21,3 +21,5 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class com.android.camp.data.model.** {*;}
+
+-keep class com.android.odevler.cagrikilic.data.** {*;}

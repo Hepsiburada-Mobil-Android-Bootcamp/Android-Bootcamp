@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
@@ -18,8 +19,10 @@ class QuestionsActivity : AppCompatActivity() {
     private var firestore: FirebaseFirestore? = null
 
     private val fab by lazy { findViewById<View>(R.id.fab) }
+    private val buttonExamFinish by lazy { findViewById<View>(R.id.button_finish) }
     private val recyclerViewQuestion by lazy { findViewById<RecyclerView>(R.id.recycler_view_question) }
     private var examId: String? = null
+    private var adapter: QuestionAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +32,14 @@ class QuestionsActivity : AppCompatActivity() {
             startActivity(Intent(this, AddNewQuestionActivity::class.java).apply {
                 putExtra("EXAM_ID", examId)
             })
+        }
+
+        buttonExamFinish.setOnClickListener {
+            if (adapter?.myAnswerList?.size == adapter?.list?.size) {
+                adapter?.sonuclandir()
+            } else {
+                Toast.makeText(this, "Tüm sorular cevaplanmalıdır", Toast.LENGTH_LONG).show()
+            }
         }
 
         Log.d("QuestionsActivity", "onCreate")
@@ -47,10 +58,17 @@ class QuestionsActivity : AppCompatActivity() {
 
     private fun bindQuestions() {
         firestore?.collection("exam")?.document(examId.toString())?.collection("questions")
+            ?.orderBy("date")
             ?.addSnapshotListener { value, error ->
-                value?.toObjects(Question::class.java).let { questions ->
-                    recyclerViewQuestion.adapter = QuestionAdapter(this, questions as ArrayList<Question>)
-                }
+                value?.toObjects(Question::class.java)
+                    ?.mapIndexed { index, question ->
+                        question.id = value.documents[index].id
+                        return@mapIndexed question
+                    }
+                    .let { questions ->
+                        adapter = QuestionAdapter(this, questions as ArrayList<Question>)
+                        recyclerViewQuestion.adapter = adapter
+                    }
             }
     }
 
