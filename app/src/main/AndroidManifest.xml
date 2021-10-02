@@ -33,6 +33,14 @@
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -48,7 +56,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
 
