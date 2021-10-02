@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_item_song"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/ic_song"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/design_default_color_primary" />
+
+    <TextView
+        android:id="@+id/tv_item_song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_artist_name"
+        app:layout_constraintStart_toEndOf="@+id/iv_item_song"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Song Name" />
+
+    <TextView
+        android:id="@+id/tv_item_artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_item_song_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_song_name"
+        tools:text="Artist" />
+
+    <TextView
+        android:id="@+id/tv_item_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_artist_name"
+        app:layout_constraintTop_toTopOf="@id/tv_item_artist_name"
+        tools:text="- 2020" />
+
+    <TextView
+        android:id="@+id/tv_item_duration"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="3:18" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
