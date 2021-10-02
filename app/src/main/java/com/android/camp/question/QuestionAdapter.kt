@@ -11,10 +11,16 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 import com.android.camp.answer.AnswerAdapter
+import com.android.camp.data.model.Answer
+import com.android.camp.data.model.ExamAnswer
 import com.android.camp.data.model.Question
 
-class QuestionAdapter(private val context:Context, private val list: ArrayList<Question>) :
+class QuestionAdapter(private val context: Context, val list: ArrayList<Question>) :
     RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder>() {
+
+    private var answerAdapter: AnswerAdapter? = null
+    val myAnswerList = arrayListOf<ExamAnswer>()
+    var isFinish = false
 
     inner class QuestionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val questionTextView by lazy { itemView.findViewById<TextView>(R.id.text_view_question) }
@@ -24,7 +30,18 @@ class QuestionAdapter(private val context:Context, private val list: ArrayList<Q
         fun bind(question: Question) {
             questionTextView.text = question.question
             recyclerViewAnswer.layoutManager = GridLayoutManager(context, 2)
-            recyclerViewAnswer.adapter = question.answers?.let { AnswerAdapter(context, it) }
+            question.answers?.let {
+                answerAdapter = AnswerAdapter(
+                    it,
+                    isFinish,
+                    myAnswerList.firstOrNull { it.question.id == question.id }) { answered ->
+                    val examAnswer = ExamAnswer(question = question, type = answered)
+                    myAnswerList.add(examAnswer)
+                    answerAdapter?.examAnswer = examAnswer
+                    notifyDataSetChanged()
+                }
+                recyclerViewAnswer.adapter = answerAdapter
+            }
         }
     }
 
@@ -37,4 +54,9 @@ class QuestionAdapter(private val context:Context, private val list: ArrayList<Q
     }
 
     override fun getItemCount() = list.size
+
+    fun sonuclandir() {
+        isFinish = true
+        notifyDataSetChanged()
+    }
 }
