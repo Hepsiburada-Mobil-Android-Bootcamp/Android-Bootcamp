@@ -8,12 +8,12 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../androidlivechatsdk-github/livechat/src/main/java/com/desk360/livechat/presentation/activity/livechat/StartNewChatActivity.kt">
+        <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/build.gradle">
+        <entry key="$PROJECT_DIR$/app/build/intermediates/packaged_manifests/debug/AndroidManifest.xml">
           <value>
             <set />
           </value>
@@ -33,7 +33,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/BindingEXt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/MainViewModel.kt">
           <value>
             <set />
           </value>
@@ -53,6 +63,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/binding/BindingExampleActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/binding/BindingViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/data/CampHelper.kt">
           <value>
             <set />
@@ -64,6 +84,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/data/model/Exam.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/data/model/ExamAnswer.kt">
           <value>
             <set />
           </value>
@@ -88,6 +113,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/login/LoginActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/login/LoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/question/AddNewQuestionActivity.kt">
           <value>
             <set />
@@ -99,6 +134,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/android/camp/question/QuestionsActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/android/odevler/yasin/konular.txt">
           <value>
             <set />
           </value>
@@ -143,12 +183,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_binding_example.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_questions.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml">
           <value>
             <set />
           </value>
@@ -189,6 +244,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../androidlivechatsdk-github/livechat/src/main/java/com/desk360/livechat/presentation/activity/livechat/StartNewChatActivity.kt">
           <value>
             <set />
           </value>
