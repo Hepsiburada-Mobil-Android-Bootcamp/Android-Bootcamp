@@ -3,6 +3,8 @@
     package="com.android.camp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -11,16 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
+
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
             android:theme="@style/Theme.Hospital"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
+      
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.HospitalListActivity"
             android:theme="@style/Theme.Hospital"
@@ -31,6 +29,59 @@
             android:exported="false" />
         <activity
             android:name=".exam.AddNewExamActivity"
+
+            android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
+
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
+            android:exported="true">
+        <activity
+            android:name="com.android.odevler.cagrikilic.PaperListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.android.odevler.tahaarican.user.UserActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.odevler.tahaarican.user.AddNewUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
             android:name=".question.AddNewQuestionActivity"
@@ -39,8 +90,37 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"/>
+            android:name="com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.edakuntalp.player.PlayerActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
