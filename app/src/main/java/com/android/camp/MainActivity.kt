@@ -6,37 +6,48 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.android.camp.data.model.Exam
+import com.android.camp.databinding.ActivityMainBinding
+import com.android.camp.exam.AddNewExamActivity
+import com.android.camp.exam.ExamAdapter
 import com.android.camp.question.QuestionsActivity
-
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
-    val textView by lazy { findViewById<TextView>(R.id.text_view_name) }
-    val buttonQuestions by lazy { findViewById<View>(R.id.button_questions) }
+    var firestore:FirebaseFirestore? = null
+    var binding:ActivityMainBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        buttonQuestions.setOnClickListener {
-            val intent = Intent(this, QuestionsActivity::class.java)
-            intent.putExtra("name", "denmee 12345")
+        binding?.fab?.setOnClickListener {
+            val intent = Intent(this, AddNewExamActivity::class.java)
             startActivity(intent)
         }
 
-        textView.text = BuildConfig.APPLICATION_ID
+        firestore = FirebaseFirestore.getInstance()
 
-        val sayi = "123asas".inteCevir()
+        bindExams()
+    }
 
-        Log.i("CampDenemTest", "onCreate => sayi: $sayi")
+    private fun bindExams() {
+        firestore?.collection("exam")?.orderBy("date")?.addSnapshotListener { value, error ->
+            val list = arrayListOf<Exam>()
 
-        if (sayi % 2 == 0) {
-            Log.d("CampDenemTest", "onCreate => çift sayı")
-        } else {
-            Log.e("CampDenemTest", "onCreate => tek sayı")
+            value?.forEach { queryDocumentSnapshot ->
+                queryDocumentSnapshot.toObject(Exam::class.java).also {  exam ->
+                    exam.id = queryDocumentSnapshot.id
+                    list.add(exam)
+                }
+            }
+
+            binding?.model = MainViewModel().apply {
+                exams.addAll(list)
+            }
         }
-
-
     }
 }
-
-fun String.inteCevir() = this.toIntOrNull() ?: 0
