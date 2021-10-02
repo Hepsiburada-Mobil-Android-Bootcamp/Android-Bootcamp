@@ -19,4 +19,10 @@
     <string name="add_song">Add Song</string>
     <string name="delete_all">Delete All</string>
     <string name="duration">%d:%d</string>
+    <string name="AttenderFirstName">Attender First Name</string>
+    <string name="AttenderLastName">Attender Last Name</string>
+    <string name="AttenderEmail">Attender Email Adress</string>
+    <string name="AttenderEventName">Event Name</string>
+
+
 </resources>
