@@ -3,13 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidProjects/app/src/main/res/layout/activity_paper_list.xml" value="0.13903985507246377" />
-        <entry key="..\:/AndroidProjects/app/src/main/res/layout/activity_questions.xml" value="0.1381340579710145" />
-        <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_new_exam.xml" value="0.2125" />
-        <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_new_question.xml" value="0.18432971014492755" />
-        <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_add_paper.xml" value="0.1" />
-        <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/activity_paper_list.xml" value="0.11481481481481481" />
-        <entry key="..\:/mixedcodes/Android-Bootcamp/app/src/main/res/layout/item_paper.xml" value="0.2" />
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_airplane.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_airplane.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.36666666666666664" />
         <entry key="app/src/main/res/drawable/bg_exam_item.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_diamond.xml" value="0.223" />
@@ -25,7 +21,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
