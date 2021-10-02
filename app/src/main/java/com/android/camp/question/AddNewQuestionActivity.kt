@@ -7,39 +7,34 @@ import android.view.View
 import android.widget.EditText
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import com.android.camp.R
 import com.android.camp.data.CampHelper
 import com.android.camp.data.model.Answer
 import com.android.camp.data.model.Question
+import com.android.camp.databinding.ActivityAddNewQuestionBinding
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import java.util.*
 
 class AddNewQuestionActivity : AppCompatActivity() {
-    private val editTextQuestion by lazy { findViewById<EditText>(R.id.edit_text_question) }
-    private val editTextA by lazy { findViewById<EditText>(R.id.edit_text_a) }
-    private val editTextB by lazy { findViewById<EditText>(R.id.edit_text_b) }
-    private val editTextC by lazy { findViewById<EditText>(R.id.edit_text_c) }
-    private val editTextD by lazy { findViewById<EditText>(R.id.edit_text_d) }
-    private val radioGroup by lazy { findViewById<RadioGroup>(R.id.radio_group) }
-    private val buttonSave by lazy { findViewById<View>(R.id.button_save) }
-
     private var secilenCevap: String? = null
     private var examId: String? = null
     private var firestore: FirebaseFirestore? = null
+    private var binding: ActivityAddNewQuestionBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_new_question)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_add_new_question)
 
-        buttonSave.setOnClickListener {
+        binding?.buttonSave?.setOnClickListener {
             if (isValid()) {
                 save()
             }
         }
 
-        radioGroup.setOnCheckedChangeListener { radioGroup, i ->
+        binding?.radioGroup?.setOnCheckedChangeListener { radioGroup, i ->
             secilenCevap = when (i) {
                 R.id.radio_group_a -> "A"
                 R.id.radio_group_b -> "B"
@@ -59,12 +54,12 @@ class AddNewQuestionActivity : AppCompatActivity() {
         Log.d("AddNewQuestionActivity", "valid form.... şu an kaydedilebilirrrrr")
 
         val question = Question(
-            question = editTextQuestion.text.toString(),
+            question = binding?.editTextQuestion?.text.toString(),
             answers = arrayListOf(
-                Answer(type = "A", answer = editTextA.text.toString()),
-                Answer(type = "B", answer = editTextB.text.toString()),
-                Answer(type = "C", answer = editTextC.text.toString()),
-                Answer(type = "D", answer = editTextD.text.toString())
+                Answer(type = "A", answer = binding?.editTextA?.text.toString()),
+                Answer(type = "B", answer = binding?.editTextB?.text.toString()),
+                Answer(type = "C", answer = binding?.editTextC?.text.toString()),
+                Answer(type = "D", answer = binding?.editTextD?.text.toString())
             ),
             correctAnswer = secilenCevap ?: "",
             date = Calendar.getInstance().time.time
@@ -72,7 +67,8 @@ class AddNewQuestionActivity : AppCompatActivity() {
 
         CampHelper.list.add(question)
 
-        firestore?.collection("exam")?.document(examId.toString())?.collection("questions")?.add(question)
+        firestore?.collection("exam")?.document(examId.toString())?.collection("questions")
+            ?.add(question)
             ?.addOnSuccessListener {
                 finish()
             }
@@ -94,13 +90,13 @@ class AddNewQuestionActivity : AppCompatActivity() {
         var isValid = true
 
         arrayListOf(
-            editTextQuestion,
-            editTextA,
-            editTextB,
-            editTextC,
-            editTextD
+            binding?.editTextQuestion,
+            binding?.editTextA,
+            binding?.editTextB,
+            binding?.editTextC,
+            binding?.editTextD
         ).forEach { editText ->
-            isValid = editText.isValid() && isValid
+            isValid = editText?.isValid() == true && isValid
         }
 
         if (secilenCevap.isNullOrEmpty()) {
