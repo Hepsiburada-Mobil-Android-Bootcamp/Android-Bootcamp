@@ -11,13 +11,10 @@
         android:theme="@style/Theme.Camp">
         <activity
             android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
@@ -28,7 +25,7 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
