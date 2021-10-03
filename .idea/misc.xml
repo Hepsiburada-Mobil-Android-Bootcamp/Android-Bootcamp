@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_airplane.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_airplane.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.36666666666666664" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/activity_add_new_student_exam.xml" value="0.22" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/activity_student_exam.xml" value="0.1897644927536232" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/item_exam.xml" value="0.1897644927536232" />
@@ -22,10 +25,22 @@
         <entry key="app/src/main/res/drawable/selector_text_view.xml" value="0.255" />
         <entry key="app/src/main/res/layout/activity_add_new_exam.xml" value="0.2831505483549352" />
         <entry key="app/src/main/res/layout/activity_add_new_question.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_bilgi_yarismasi.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3125" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_questions.xml" value="0.28099517822265624" />
+        <entry key="app/src/main/res/layout/activity_stores.xml" value="0.153125" />
+        <entry key="app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.153125" />
+        <entry key="app/src/main/res/layout/app_bar_bilgi_yarismasi.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/content_bilgi_yarismasi.xml" value="0.32395833333333335" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/fragment_sms_verification_code.xml" value="0.3125" />
         <entry key="app/src/main/res/layout/item_answer.xml" value="0.335" />
         <entry key="app/src/main/res/layout/item_question.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/nav_header_bilgi_yarismasi.xml" value="0.3125" />
+        <entry key="app/src/main/res/layout/player_recyclerview_row.xml" value="0.23020833333333332" />
+        <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.3125" />
       </map>
     </option>
   </component>

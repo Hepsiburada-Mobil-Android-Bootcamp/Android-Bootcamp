@@ -6,4 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.android.odevler.arifumutsepetci.data.store.StoresActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view_store"
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
