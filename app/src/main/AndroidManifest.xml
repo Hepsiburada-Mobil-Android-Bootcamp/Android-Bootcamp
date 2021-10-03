@@ -28,6 +28,16 @@
             android:theme="@style/Theme.Hospital"
             android:exported="false" />
         <activity
+            android:name="com.android.odevler.orhunozdemir.activitiy.AddCustomerActivitity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.android.odevler.orhunozdemir.activitiy.CustomerListActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".exam.AddNewExamActivity"
 
             android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
@@ -76,6 +86,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name="com.android.odevler.tahaarican.user.AddNewUserActivity"
