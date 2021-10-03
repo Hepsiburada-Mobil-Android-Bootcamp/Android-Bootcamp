@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.data.model.Exam
 import com.android.camp.exam.AddNewExamActivity
 import com.android.camp.exam.ExamAdapter
-import com.android.camp.question.QuestionsActivity
 import com.google.firebase.firestore.FirebaseFirestore
 
 
