@@ -1,16 +1,17 @@
 package com.android.camp.answer
 
-import android.content.Context
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 import com.android.camp.data.model.Answer
+import com.android.camp.data.model.ExamAnswer
+import com.android.camp.data.model.Question
 
-class AnswerAdapter(private val context: Context, private var list: ArrayList<Answer>) :
+class AnswerAdapter(private var list: ArrayList<Answer>, private val isFinish:Boolean, var examAnswer: ExamAnswer?,
+                    private val answered:(String) -> Unit) :
     RecyclerView.Adapter<AnswerViewHolder>() {
-
-    private var selectedType: String = ""
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnswerViewHolder {
         return AnswerViewHolder(
@@ -18,13 +19,13 @@ class AnswerAdapter(private val context: Context, private var list: ArrayList<An
         )
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onBindViewHolder(holder: AnswerViewHolder, position: Int) {
         val answer = list[position]
-        holder.bind(answer, selectedType)
+        holder.bind(answer, isFinish, examAnswer)
 
         holder.itemView.setOnClickListener {
-            selectedType = answer.type.toString()
-            notifyDataSetChanged()
+            answer.type?.let { type -> answered(type) }
         }
 
     }

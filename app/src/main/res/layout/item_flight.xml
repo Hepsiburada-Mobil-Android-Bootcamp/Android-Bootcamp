@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#E3E3E3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flightNumbertxt"
+        android:text="Flight Number:"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flightNumber"
+        android:layout_marginLeft="10dp"
+        android:hint="Flight Number"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/flightNumbertxt"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromtxt"
+        android:text="From:"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flightNumber"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:layout_marginLeft="10dp"
+        android:hint="From"
+        android:textSize="24sp"
+        android:textColor="#FF3D00"
+        app:layout_constraintStart_toEndOf="@id/fromtxt"
+        app:layout_constraintTop_toBottomOf="@id/flightNumber"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totxt"
+        android:text="To:"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@id/fromtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flightNumber"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/to"
+        android:layout_marginLeft="10dp"
+        android:hint="To"
+        android:textSize="24sp"
+        android:textColor="#07FF00"
+        app:layout_constraintStart_toEndOf="@id/totxt"
+        app:layout_constraintTop_toBottomOf="@id/flightNumber"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/departureTimetxt"
+        android:text="Departure Time:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/from"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/departureTime"
+        android:layout_marginLeft="10dp"
+        android:hint="Departure"
+        android:textSize="18sp"
+        android:textColor="#011768"
+        app:layout_constraintStart_toEndOf="@id/departureTimetxt"
+        app:layout_constraintTop_toBottomOf="@id/from"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/landingTimetxt"
+        android:text="Landing Time:"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/totxt"
+        app:layout_constraintTop_toBottomOf="@id/from"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/landingTime"
+        android:layout_marginLeft="10dp"
+        android:hint="Landing"
+        android:textSize="18sp"
+        android:textColor="#011768"
+        app:layout_constraintStart_toEndOf="@id/landingTimetxt"
+        app:layout_constraintTop_toBottomOf="@id/from"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
