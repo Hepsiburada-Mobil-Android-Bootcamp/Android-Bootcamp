@@ -18,7 +18,7 @@
             android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
             android:theme="@style/Theme.Hospital"
             android:exported="true"/>
-      
+
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.HospitalListActivity"
             android:theme="@style/Theme.Hospital"
@@ -71,27 +71,6 @@
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name="com.android.odevler.tahaarican.user.UserActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-        <activity
-            android:name="com.android.odevler.tahaarican.user.AddNewUserActivity"
-            android:exported="true" />
-        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -101,19 +80,14 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.arifumutsepetci.data.store.AddNewStoreActivity"
-            android:exported="true" />
-
-        <activity
             android:name=".login.LoginActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
 
-        <activity
-            android:name="com.android.odevler.edakuntalp.player.PlayerActivity"
-            android:exported="true">
-
+            </intent-filter>
         </activity>
 
         <activity
@@ -132,6 +106,13 @@
         <activity
             android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
             android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serhadmert.ui.HomeActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.android.odevler.serhadmert.ui.AddAnime"
+            android:exported="true" />
     </application>
+
 
 </manifest>
