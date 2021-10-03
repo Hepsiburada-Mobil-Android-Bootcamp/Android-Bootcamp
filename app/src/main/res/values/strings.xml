@@ -40,4 +40,14 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- İsmail Talha Dengiz, Ödev-1,2 -->
+    <string name="collection_name">talhadengiz</string>
+    <string name="student_number">Öğrenci Numarası</string>
+    <string name="lesson_name">Ders Adı</string>
+    <string name="midterm_point">Vize Notu</string>
+    <string name="final_point">Final Notu</string>
+    <string name="save_exam">Kaydet</string>
+    <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
+    <string name="successful">Başarılı</string>
+    <!-- - - - - - - - - - - - - - - - -->
 </resources>
