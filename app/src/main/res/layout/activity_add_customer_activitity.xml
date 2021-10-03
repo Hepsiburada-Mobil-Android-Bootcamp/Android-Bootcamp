@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.android.odevler.orhunozdemir.activitiy.AddCustomerActivitity">
+
+<EditText
+    android:id="@+id/editTextCustomerName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="65dp"
+    android:ems="10"
+    android:inputType="text"
+    android:hint="Name"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/editTextCustomerSurname"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="104dp"
+    android:layout_marginTop="26dp"
+    android:layout_marginEnd="98dp"
+    android:ems="10"
+    android:inputType="text"
+    android:hint="Surname"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCustomerName" />
+
+<EditText
+    android:id="@+id/editTextCustomerAge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="103dp"
+    android:layout_marginTop="29dp"
+    android:layout_marginEnd="98dp"
+    android:ems="10"
+    android:inputType="number"
+    android:hint="Age"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCustomerSurname" />
+
+<Button
+    android:id="@+id/buttonSaveCustomer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="275dp"
+    android:text="Save"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCustomerAge" />
+</androidx.constraintlayout.widget.ConstraintLayout>
