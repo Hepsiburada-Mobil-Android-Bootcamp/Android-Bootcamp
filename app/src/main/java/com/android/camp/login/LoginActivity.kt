@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.android.camp.MainActivity
 import com.android.camp.R
+import com.android.camp.navigationcomponent.BilgiYarismasiActivity
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
@@ -16,8 +17,6 @@ class LoginActivity : AppCompatActivity() {
     var phoneNumberCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks? = null
     private val auth by lazy { FirebaseAuth.getInstance() }
 
-    val list = arrayListOf<Fragment>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -25,8 +24,15 @@ class LoginActivity : AppCompatActivity() {
         createPhoneNumberCallbacks()
 
         val loginFragment = LoginFragment(phoneNumberCallbacks)
-        list.add(loginFragment)
         openFragment(loginFragment)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (auth.currentUser != null) {
+            startActivity(Intent(this, BilgiYarismasiActivity::class.java))
+            finish()
+        }
     }
 
 
@@ -57,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
         openFragment(SmsVerficationCodeFragment { smsCode ->
             val credential = PhoneAuthProvider.getCredential(verificationId, smsCode)
             auth.signInWithCredential(credential).addOnSuccessListener {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, BilgiYarismasiActivity::class.java))
                 finish()
             }.addOnFailureListener {
                 Toast.makeText(this, "Giriş Yapılamadı", Toast.LENGTH_LONG).show()

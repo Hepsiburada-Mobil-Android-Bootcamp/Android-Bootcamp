@@ -26,6 +26,7 @@ firestore.collection("isimsoyisim").addSnasphoListener {
 
 ----------------------------------------------------------
 
+ödevleri databinding ile kullanalım.
 
 LoginTypeActivity, LoginTypeFragment => giriş tipleri 12 button ile listeleceğiz. => Umut
 
