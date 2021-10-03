@@ -38,10 +38,7 @@
 
         </activity>
         <activity
-            android:name=".exam.AddNewExamActivity"
-
             android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
-
             android:exported="true" />
         <activity
             android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
