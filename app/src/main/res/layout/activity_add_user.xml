@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.odevler.akinkeskinbas.rehber.AddUserActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:hint="isim giriniz"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="textEmailAddress"
+        android:hint="mail giriniz"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mailText"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:hint="numara giriniz"
+        android:layout_margin="8dp"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberText"/>
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"/>
+</LinearLayout>
