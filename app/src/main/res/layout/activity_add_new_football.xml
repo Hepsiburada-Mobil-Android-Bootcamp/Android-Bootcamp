@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/teamNameText_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Takım ismi.."
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        android:layout_marginTop="32dp"
+        app:helperText="Futbol takımı olmalıdır."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/teamNameEditText_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_save_football"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/yearTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Kuruluş yılı.."
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:helperText="Sadece sayılardan oluşmalıdır."
+        app:layout_constraintEnd_toEndOf="@+id/teamNameText_input_layout"
+        app:layout_constraintStart_toStartOf="@+id/teamNameText_input_layout"
+        app:layout_constraintTop_toBottomOf="@+id/teamNameText_input_layout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/yearTextInputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bestPlayerTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="En iyi oyuncusu?"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        android:layout_marginTop="32dp"
+        app:helperText="Son 5 yıl içinde tüm futbolcular geçerlidir."
+        app:layout_constraintEnd_toEndOf="@+id/yearTextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/yearTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/yearTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bestPlayerEditTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/teamColorTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:helperText="2 adet renk girilmelidir."
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:hint="Takım rengi.."
+        app:layout_constraintEnd_toEndOf="@+id/bestPlayerTextInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/bestPlayerTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/bestPlayerTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/teamColorEditTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

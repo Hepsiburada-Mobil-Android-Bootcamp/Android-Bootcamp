@@ -49,3 +49,15 @@ m
 =app/src/main/java/com/android/camp/answer/AnswerViewHolder.kt,7/0/70e61ffb4f4e4f03ba52dd33808ed5c734883eab
 j
 :app/src/main/java/com/android/camp/answer/AnswerAdapter.kt,0/a/0a1567eb7b355c113600d597fa3d9da759199b84
+e
+5app/src/main/res/layout/activity_add_new_question.xml,3/1/310a4bb18733f14a07334f022992451a00ec5b27
+Y
+)app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
+i
+9app/src/main/java/com/android/camp/login/LoginFragment.kt,4/0/4052c6229f4ba91311fbe231735ddc072ffa327d
+t
+Dapp/src/main/java/com/android/camp/binding/BindingExampleActivity.kt,1/b/1bda932bc3e0c0c1f4cd0d0402bdb49146a74c07
+i
+9app/src/main/java/com/android/camp/login/LoginActivity.kt,3/2/3247d9e2c3d48b21f78df10dd0345bac7df97c60
+g
+7app/src/main/java/com/android/odevler/yasin/konular.txt,5/9/59067235d75ab7d3239bd27f5771533d38dbf272
