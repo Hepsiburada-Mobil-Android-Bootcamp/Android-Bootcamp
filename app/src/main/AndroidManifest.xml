@@ -8,6 +8,8 @@
     </uses-permission>
 
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -99,6 +101,15 @@
             android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.sahinkapan.AddTravelActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahinkapan.TravelActivity"
+            android:exported="true" >
+
+        </activity>
+
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -128,7 +139,16 @@
             android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity
             android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
             android:exported="true" />
@@ -156,6 +176,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 
