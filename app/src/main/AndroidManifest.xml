@@ -112,6 +112,13 @@
         <activity
             android:name="com.android.odevler.serhadmert.ui.AddAnime"
             android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ayse_senses.note.AddNoteActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 
