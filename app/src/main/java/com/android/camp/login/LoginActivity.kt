@@ -17,6 +17,8 @@ class LoginActivity : AppCompatActivity() {
     var phoneNumberCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks? = null
     private val auth by lazy { FirebaseAuth.getInstance() }
 
+    val list = arrayListOf<Fragment>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -24,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
         createPhoneNumberCallbacks()
 
         val loginFragment = LoginFragment(phoneNumberCallbacks)
+        list.add(loginFragment)
         openFragment(loginFragment)
     }
 
