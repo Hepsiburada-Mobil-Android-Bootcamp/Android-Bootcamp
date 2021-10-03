@@ -23,3 +23,4 @@
 -keep class com.android.camp.data.model.** {*;}
 
 -keep class com.android.odevler.cagrikilic.data.** {*;}
+-keep class com.android.odevler.talhadengiz.data.model.** {*;}
