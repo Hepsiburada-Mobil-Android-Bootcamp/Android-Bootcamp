@@ -25,7 +25,7 @@ class StoresActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_stores)
         addNewStoreFab.setOnClickListener {
             val intent = Intent(this, AddNewStoreActivity::class.java)
             startActivity(intent)

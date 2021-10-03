@@ -51,8 +51,6 @@ j
 :app/src/main/java/com/android/camp/answer/AnswerAdapter.kt,0/a/0a1567eb7b355c113600d597fa3d9da759199b84
 e
 5app/src/main/res/layout/activity_add_new_question.xml,3/1/310a4bb18733f14a07334f022992451a00ec5b27
-Y
-)app/src/main/res/layout/activity_main.xml,7/6/76b07e40f24cce093536731477540f12e7da3cb6
 i
 9app/src/main/java/com/android/camp/login/LoginFragment.kt,4/0/4052c6229f4ba91311fbe231735ddc072ffa327d
 t
