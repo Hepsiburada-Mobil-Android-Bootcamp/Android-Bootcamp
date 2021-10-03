@@ -142,8 +142,19 @@
             android:name="com.android.odevler.ayse_senses.note.AddNoteActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.seymafirat.student.AddNewStudentActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.seymafirat.student.StudentActivity"
+            android:exported="true" />
+        <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
