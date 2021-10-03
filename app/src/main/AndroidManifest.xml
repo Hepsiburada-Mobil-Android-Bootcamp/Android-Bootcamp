@@ -101,6 +101,13 @@
             android:name="com.android.odevler.sahinkapan.TravelActivity"
             android:exported="true"></activity>
         <activity
+            android:name="com.android.odevler.nahitfidanci.activities.AddNewGalaxyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.nahitfidanci.activities.GalaxyActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
         <activity
@@ -110,6 +117,8 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
             android:name="com.android.odevler.talhadengiz.ui.AddNewStudentExam"
             android:exported="true" />
         <activity
@@ -155,11 +164,6 @@
         <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
