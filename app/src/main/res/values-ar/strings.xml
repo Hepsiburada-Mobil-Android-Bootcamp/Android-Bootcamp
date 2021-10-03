@@ -20,13 +20,10 @@
     <string name="delete_all">Delete All</string>
     <string name="duration">%d:%d</string>
     <string name="finish_exam">End Exam</string>
-    <string name="phone_number">Phone Number</string>
-    <string name="login">Login</string>
-    <string name="phone_number_format">phone number format is 5321112233</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="phone_number_format">تنسيق رقم الهاتف هو 5321112233</string>
     <string name="sms_code_validation">sms code 6 haneli olmalıdır</string>
-    <string name="welcome_user">Welcome %1$s</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="sms_code_warning">6 haneli sms kodunuzu giriniz.</string>
     <string name="enter_sms_code">Enter sms Code</string>
     <string name="verify">Verify</string>
 </resources>

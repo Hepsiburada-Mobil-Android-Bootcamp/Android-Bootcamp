@@ -14,7 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 class HomeActivity : AppCompatActivity() {
 
     val add by lazy { findViewById<View>(R.id.fab_add) }
-    val recyclerViewAnime by lazy { findViewById<RecyclerView>(R.id.recycler_view_anime) }
+    val recyclerViewAnime by lazy { findViewById<RecyclerView>(R.id.rc_rehber) }
     var firestore: FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
