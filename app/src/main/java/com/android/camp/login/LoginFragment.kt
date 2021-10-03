@@ -17,7 +17,12 @@ import com.google.firebase.auth.PhoneAuthOptions
 import com.google.firebase.auth.PhoneAuthProvider
 import java.util.concurrent.TimeUnit
 
-class LoginFragment(private val phoneNumberCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks?) : Fragment() {
+class LoginFragment(private val phoneNumberCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks?) :
+    Fragment() {
+
+    companion object {
+        const val TAG = "LoginFragment"
+    }
 
     var phoneNumberEditText: EditText? = null
     var phoneNumberTextInputLayout: TextInputLayout? = null
@@ -68,7 +73,7 @@ class LoginFragment(private val phoneNumberCallbacks: PhoneAuthProvider.OnVerifi
         val phoneNumber = "+905" + phoneNumberEditText?.text.toString()
 
         phoneNumberCallbacks?.let { callbacks ->
-            val option =    PhoneAuthOptions.newBuilder()
+            val option = PhoneAuthOptions.newBuilder()
                 .setActivity(requireActivity())
                 .setPhoneNumber(phoneNumber)
                 .setTimeout(60L, TimeUnit.SECONDS)
@@ -77,7 +82,6 @@ class LoginFragment(private val phoneNumberCallbacks: PhoneAuthProvider.OnVerifi
 
             PhoneAuthProvider.verifyPhoneNumber(option)
         }
-
 
 
     }

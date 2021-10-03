@@ -16,6 +16,8 @@ class LoginActivity : AppCompatActivity() {
     var phoneNumberCallbacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks? = null
     private val auth by lazy { FirebaseAuth.getInstance() }
 
+    val list = arrayListOf<Fragment>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -23,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
         createPhoneNumberCallbacks()
 
         val loginFragment = LoginFragment(phoneNumberCallbacks)
+        list.add(loginFragment)
         openFragment(loginFragment)
     }
 
@@ -49,12 +52,6 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        val loginFragment = LoginFragment(phoneNumberCallbacks)
-        loginFragment.onActivityResult(requestCode, resultCode, data)
-    }
 
     fun openSmsCodeVerify(verificationId: String, p1: PhoneAuthProvider.ForceResendingToken) {
         openFragment(SmsVerficationCodeFragment { smsCode ->
