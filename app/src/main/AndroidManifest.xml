@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.camp">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
+            android:exported="true" />
+        <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
@@ -17,6 +31,15 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
         <activity
             android:name=".exam.AddNewExamActivity"
@@ -28,14 +51,30 @@
             android:name=".question.QuestionsActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
