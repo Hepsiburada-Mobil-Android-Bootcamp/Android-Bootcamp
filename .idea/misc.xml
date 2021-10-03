@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_airplane.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_airplane.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/activity_add_anime_character.xml" value="0.24954710144927536" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/activity_main.xml" value="0.24954710144927536" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/item_anime.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/item_answer.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/item_exam.xml" value="0.358695652173913" />
+        <entry key="..\:/AndroidApps/Hepsiburada-Mobil-Android-Bootcamp/app/src/main/res/layout/item_question.xml" value="0.24954710144927536" />
         <entry key="app/src/main/res/drawable/bg_exam_item.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_diamond.xml" value="0.223" />
