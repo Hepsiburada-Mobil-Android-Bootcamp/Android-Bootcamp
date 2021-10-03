@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 import com.android.camp.databinding.AirplaneRecyclerviewRowBinding
-import com.android.odevler.ebraryucel.data.Airplane
+//import com.android.odevler.ebraryucel.data.Airplane
 import com.squareup.picasso.Picasso
 
 
