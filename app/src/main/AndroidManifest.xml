@@ -3,7 +3,9 @@
     package="com.android.camp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
+
+    </uses-permission>
 
 
     <application
@@ -37,18 +39,13 @@
             android:exported="true">
 
         </activity>
-        <activity
-            android:name=".exam.AddNewExamActivity"
 
-            android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
-
-            android:exported="true" />
         <activity
             android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.sahranurer.adapter.BookActivity"
-            android:exported="true">
+            android:exported="true"/>
         <activity
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
@@ -70,36 +67,15 @@
         <activity
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
-        <activity
-            android:name="com.android.odevler.cagrikilic.PaperListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
-            android:exported="true" />
+
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
             android:exported="true" />
-        <activity
-            android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
-            android:exported="true" />
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.HomeActivity"
             android:exported="true" />
@@ -124,25 +100,6 @@
             android:name=".login.LoginActivity"
             android:exported="true">
 
-        </activity>
-        <activity
-            android:name=".exam.AddNewExamActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.AddNewQuestionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.QuestionsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".login.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-
-            </intent-filter>
         </activity>
 
 
