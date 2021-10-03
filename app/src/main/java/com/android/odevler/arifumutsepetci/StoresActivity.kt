@@ -20,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class StoresActivity : AppCompatActivity() {
     val addNewStoreFab by lazy { findViewById<View>(R.id.fab) }
-    val recyclerViewStore by lazy { findViewById<RecyclerView>(R.id.recycler_view_store) }
+    //val recyclerViewStore by lazy { findViewById<RecyclerView>(R.id.recycler_view_store) }
     var firestore:FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ class StoresActivity : AppCompatActivity() {
     }
 
     private fun initStores() {
-        recyclerViewStore.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        //recyclerViewStore.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 
     private fun bindStores() {
@@ -48,7 +48,7 @@ class StoresActivity : AppCompatActivity() {
                     list.add(store)
                 }
             }
-            recyclerViewStore.adapter = StoreAdapter(this, list)
+            //recyclerViewStore.adapter = StoreAdapter(this, list)
         }
     }
 }

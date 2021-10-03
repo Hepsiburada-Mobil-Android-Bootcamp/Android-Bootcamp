@@ -49,12 +49,7 @@
         <activity
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
-        <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+
         <activity
             android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
             android:exported="true" />
@@ -121,10 +116,6 @@
 
         </activity>
 
-        <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
-            android:exported="true">
-        </activity>
 
         <activity
             android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
@@ -146,7 +137,11 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
-            android:exported="true">
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
