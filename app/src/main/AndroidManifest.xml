@@ -3,6 +3,12 @@
     package="com.android.camp">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
+
+    </uses-permission>
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,17 +17,96 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
+
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="true"/>
+
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.HospitalListActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="false" />
+        <activity
+            android:name="com.android.odevler.oguzhanyildirim.view.AddHospitalActivity"
+            android:theme="@style/Theme.Hospital"
+            android:exported="false" />
+        <activity
+            android:name="com.android.odevler.orhunozdemir.activitiy.AddCustomerActivitity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.android.odevler.orhunozdemir.activitiy.CustomerListActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.android.odevler.cagrikilic.PaperListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.android.odevler.akinkeskinbas.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name="com.android.odevler.mehmet_serkan_guzel.FootballListActivity"
+            android:exported="true" />
+
+
+        <activity
+            android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.sahinkapan.AddTravelActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.sahinkapan.TravelActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
@@ -33,11 +118,55 @@
         <activity
             android:name=".question.QuestionsActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true">
+
+        </activity>
+
+
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity
+            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
+            android:exported="true">
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serhadmert.ui.HomeActivity"
+            android:exported="true"/>
+        <activity
+            android:name="com.android.odevler.serhadmert.ui.AddAnime"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ayse_senses.note.AddNoteActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
+            android:exported="true">
+        </activity>
 
     </application>
+
 
 </manifest>
