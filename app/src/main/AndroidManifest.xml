@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name="com.android.odevler.cagrikilic.PaperListActivity"
+            android:exported="true" />
+        <activity
             android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
             android:exported="true" />
         <activity
@@ -24,23 +27,31 @@
             android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
+            android:exported="true" />
+        <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.akinkeskinbas.HomeActivity"
-            android:exported="true" />
-        <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+            android:name="com.android.odevler.akinkeskinbas.HomeActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
+            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
             android:exported="true" />
+        <activity
+            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
@@ -57,7 +68,6 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
 
