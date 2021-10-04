@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/text_view_lecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Please, add your lecture!"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/text_crn"
+        android:layout_width="288dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="CRN: "
+        app:layout_constraintTop_toBottomOf="@+id/text_view_lecture"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_crn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please, add your CRN of course!"
+        app:layout_constraintTop_toBottomOf="@+id/text_crn"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/text_coursecode"
+        android:layout_width="284dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Course Code: "
+        app:layout_constraintTop_toBottomOf="@+id/edit_crn"
+        tools:layout_editor_absoluteX="0dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_coursecode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please, add your course code!"
+        app:layout_constraintTop_toBottomOf="@+id/text_coursecode"
+        tools:layout_editor_absoluteX="0dp"
+        />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="288dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Title: "
+        app:layout_constraintTop_toBottomOf="@+id/edit_coursecode"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please, add your name of course!"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <TextView
+        android:id="@+id/text_instructor"
+        android:layout_width="288dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Instructor: "
+        app:layout_constraintTop_toBottomOf="@+id/edit_title"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <EditText
+        android:id="@+id/edit_instructor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please, add name and surname of instructor!"
+        app:layout_constraintTop_toBottomOf="@+id/text_instructor"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <TextView
+        android:id="@+id/text_capacity"
+        android:layout_width="288dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Capacity: "
+        app:layout_constraintTop_toBottomOf="@+id/edit_instructor"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/edit_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Please, add course capacity!"
+        app:layout_constraintTop_toBottomOf="@+id/text_capacity"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button_add_lecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="595dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
