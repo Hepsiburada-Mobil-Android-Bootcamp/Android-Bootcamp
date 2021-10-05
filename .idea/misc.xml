@@ -24,6 +24,13 @@
         <entry key="app/src/main/res/layout/item_exam.xml" value="0.3170289855072464" />
         <entry key="app/src/main/res/layout/item_question.xml" value="0.5" />
         <entry key="app/src/main/res/layout/ticket_item.xml" value="0.27024819350323986" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_new_nba_champ.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_nba_champ_list.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.1" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/layout/item_nba_champ.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/menu/nba_champ_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Ozant/AndroidStudioProjects/Android-Bootcamp/app/src/main/res/menu/song_menu.xml" value="0.20416666666666666" />
+
       </map>
     </option>
   </component>
