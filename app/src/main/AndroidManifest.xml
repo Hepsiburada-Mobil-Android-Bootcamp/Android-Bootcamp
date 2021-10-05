@@ -16,17 +16,12 @@
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.language.AddNewLanguageActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".navigationcomponent.BilgiYarismasiActivity"
             android:exported="true"
             android:label="@string/title_activity_bilgi_yarismasi"
-            android:theme="@style/Theme.Camp.NoActionBar"></activity>
+            android:theme="@style/Theme.Camp.NoActionBar" />
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
             android:exported="true"
@@ -58,11 +53,21 @@
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
         <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.AddNbaChampActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.ozantakir.NbaChamp.NbaChampsListActivity"
+            android:exported="true" />
+
+        <activity
+            android:name="com.android.odevler.cagrikilic.PaperListActivity"
+            android:exported="true" />
+        <activity
             android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
             android:exported="true" />
@@ -75,12 +80,15 @@
         <activity
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
+
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
             android:exported="true" />
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.HomeActivity"
             android:exported="true" />
@@ -93,6 +101,8 @@
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.FootballListActivity"
             android:exported="true" />
+
+
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
             android:exported="true" />
@@ -101,6 +111,12 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.sahinkapan.TravelActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.nahitfidanci.activities.AddNewGalaxyActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.nahitfidanci.activities.GalaxyActivity"
             android:exported="true" />
         <activity
             android:name=".exam.AddNewExamActivity"
@@ -116,11 +132,15 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".login.LoginActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
@@ -151,8 +171,7 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
