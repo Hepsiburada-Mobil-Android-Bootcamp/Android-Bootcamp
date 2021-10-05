@@ -57,6 +57,7 @@ class AddNewLanguageActivity : AppCompatActivity() {
             when (task.isSuccessful) {
                 true -> {
                     Toast.makeText(this, "${editTextLanguageName.text} Dili Başarıyla Eklendi.", Toast.LENGTH_LONG).show()
+                    finish()
                 }
                 false -> Toast.makeText(this, "Dil Eklenemedi...", Toast.LENGTH_LONG).show()
             }
