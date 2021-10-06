@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">camp</string>
+    <string name="title_activity_questions">Ερωτήσεις Δραστηριότητα</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Πρώτο Θραύσμα</string>
+    <string name="second_fragment_label">Δεύτερο θραύσμα</string>
+    <string name="next">Επόμενο</string>
+    <string name="previous">Προηγούμενος</string>
+
+    <string name="hello_first_fragment">Γεια σας πρώτο κομμάτι</string>
+    <string name="hello_second_fragment">Γεια σας δεύτερο απόσπασμα. Arg: %1$s</string>
+    <string name="content_description">Περιγραφή περιεχομένου</string>
+    <string name="song_name">ΟΝΟΜΑ ΤΡΑΓΟΥΔΙΟΥ</string>
+    <string name="artists_name">Όνομα καλλιτεχνών</string>
+    <string name="duration_time">Χρόνος διαρκείας</string>
+    <string name="year">Ετος</string>
+    <string name="save">Αποθηκεύσετε</string>
+    <string name="add_text">Προσθέστε κείμενο</string>
+    <string name="add_song">Προσθήκη τραγουδιού</string>
+    <string name="delete_all">Delete All</string>
+    <string name="duration">%d:%d</string>
+    <string name="finish_exam">Λήξη Εξετάσεων</string>
+    <string name="phone_number">Τηλεφωνικό νούμερο</string>
+    <string name="login">Σύνδεση</string>
+    <string name="phone_number_format">η μορφή αριθμού τηλεφώνου είναι 5321112233</string>
+    <string name="sms_code_validation">Ο κωδικός sms πρέπει να είναι 6 ψηφία</string>
+    <string name="welcome_user">Καλώς ορίσατε %1 $ s</string>
+    <string name="sign_out">Αποσύνδεση</string>
+    <string name="sms_code_warning">Εισαγάγετε τον 6ψήφιο κωδικό sms.</string>
+    <string name="enter_sms_code">Εισαγάγετε τον κωδικό sms</string>
+    <string name="verify">Επαληθεύω</string>
+    <string name="title_activity_bilgi_yarismasi">Δραστηριότητα Διαγωνισμού Γνώσης</string>
+    <string name="navigation_drawer_open">Άνοιγμα συρταριού πλοήγησης</string>
+    <string name="navigation_drawer_close">Κλείσιμο συρταριού πλοήγησης</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Κεφαλίδα πλοήγησης</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+
+    <string name="menu_home">Σπίτι</string>
+    <string name="menu_gallery">Εκθεσιακός χώρος</string>
+    <string name="menu_slideshow">Παρουσίαση διαφανειών</string>
+    <!-- İsmail Talha Dengiz, Ödev-1,2 -->
+    <string name="collection_name">talhadengiz</string>
+    <string name="student_number">Αριθμός μαθητή</string>
+    <string name="lesson_name">Όνομα μαθήματος</string>
+    <string name="midterm_point">Σημείωση θεώρησης</string>
+    <string name="final_point">Τελικός βαθμός</string>
+    <string name="save_exam">Αποθηκεύσετε</string>
+    <string name="tum_alanlar_doldurulmalidir">Όλα τα πεδία πρέπει να συμπληρωθούν!</string>
+    <string name="successful">Επιτυχής</string>
+    <!-- - - - - - - - - - - - - - - - -->
+</resources>
