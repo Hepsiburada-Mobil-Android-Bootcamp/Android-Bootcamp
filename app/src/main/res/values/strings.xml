@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">camp</string>
-    <string name="title_activity_questions">QuestionsActivity</string>
+    <string name="title_activity_questions" translatable="false">QuestionsActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -24,33 +24,40 @@
     <string name="login">Login</string>
     <string name="phone_number_format">phone number format is 5321112233</string>
     <string name="sms_code_validation">sms code 6 haneli olmalıdır</string>
-    <string name="welcome_user">Welcome %1$s</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="sms_code_warning">6 haneli sms kodunuzu giriniz.</string>
+    <string name="welcome_user" translatable="false">Welcome %1$s</string>
+    <string name="sign_out" translatable="false">Sign Out</string>
+    <string name="sms_code_warning" translatable="false">6 haneli sms kodunuzu giriniz.</string>
     <string name="enter_sms_code">Enter sms Code</string>
     <string name="verify">Verify</string>
-    <string name="title_activity_bilgi_yarismasi">BilgiYarismasiActivity</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="title_activity_bilgi_yarismasi" translatable="false">BilgiYarismasiActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings" translatable="false">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
     <!-- İsmail Talha Dengiz, Ödev-1,2 -->
-    <string name="collection_name">talhadengiz</string>
-    <string name="student_number">Öğrenci Numarası</string>
-    <string name="lesson_name">Ders Adı</string>
-    <string name="midterm_point">Vize Notu</string>
-    <string name="final_point">Final Notu</string>
-    <string name="save_exam">Kaydet</string>
-    <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
-    <string name="successful">Başarılı</string>
+    <string name="collection_name" translatable="false">talhadengiz</string>
+    <string name="student_number" translatable="false">Öğrenci Numarası</string>
+    <string name="lesson_name" translatable="false">Ders Adı</string>
+    <string name="midterm_point" translatable="false">Vize Notu</string>
+    <string name="final_point" translatable="false">Final Notu</string>
+    <string name="tum_alanlar_doldurulmalidir" translatable="false">Tüm alanlar doldurulmalıdır !</string>
+    <string name="successful" translatable="false">Başarılı</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="default_client_id">Client Id</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <!-- - - - - - - - - - - - - - - - -->
+
+    <!-- Abdul Wahid Noor, Google Auth -->
+    <string name="sign_in_with_google" translatable="false">Sign In With Google</string>
+    <string name="google_user_email" translatable="false">Email: %s</string>
+    <string name="google_user_phone" translatable="false">Email: %s</string>
+    <string name="google_user_phone_null" translatable="false">Phone Number Not Found</string>
+    <string name="google_logout" translatable="false">Logout</string>
     <!-- - - - - - - - - - - - - - - - -->
 </resources>

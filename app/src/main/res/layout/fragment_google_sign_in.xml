@@ -11,24 +11,16 @@
         android:layout_height="match_parent"
         tools:context="com.android.firebase.auth.google.GoogleSignInFragment">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign In Fragment"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="50dp"/>
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_sign_in"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sign In With Google"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/sign_in_with_google"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

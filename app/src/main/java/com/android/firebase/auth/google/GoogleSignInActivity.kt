@@ -1,11 +1,8 @@
 package com.android.firebase.auth.google
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.databinding.DataBindingUtil
-import com.android.camp.R
+import androidx.appcompat.app.AppCompatActivity
 import com.android.camp.databinding.ActivityGoogleSignInBinding
-import com.google.firebase.auth.FirebaseUser
 
 class GoogleSignInActivity : AppCompatActivity() {
 
@@ -24,15 +21,18 @@ class GoogleSignInActivity : AppCompatActivity() {
 
     fun initGoogleSignInFragment() {
         val transaction = supportFragmentManager.beginTransaction()
-        binding?.flGoogle?.let { transaction.add(it.id, signInFragment) }
-        transaction.commit()
+        binding?.flGoogle?.let {
+            transaction.add(it.id, signInFragment)
+            transaction.remove(homeFragment)
+            transaction.commit()
+        }
     }
 
     fun initGoogleHomeFragment() {
         val transaction = supportFragmentManager.beginTransaction()
         binding?.flGoogle?.let {
             transaction.remove(signInFragment)
-            transaction.add(it.id,homeFragment)
+            transaction.add(it.id, homeFragment)
             transaction.commit()
         }
     }
