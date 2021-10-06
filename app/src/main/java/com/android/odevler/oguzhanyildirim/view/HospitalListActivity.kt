@@ -4,9 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
+import com.android.camp.databinding.ActivityHospitalListBinding
 import com.android.odevler.oguzhanyildirim.adapter.HospitalAdapter
 import com.android.odevler.oguzhanyildirim.data.model.Hospital
 import com.google.firebase.firestore.FirebaseFirestore
@@ -14,18 +16,21 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class HospitalListActivity : AppCompatActivity() {
 
-    private val recyclerViewHospital by lazy { findViewById<RecyclerView>(R.id.recyclerViewHospital) }
-    private val btnAdd by lazy { findViewById<Button>(R.id.btnAdd) }
     private var firestore: FirebaseFirestore? = null
+    private var hospitalListBinding : ActivityHospitalListBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hospital_list)
+        hospitalListBinding = DataBindingUtil.setContentView(
+            this,
+            R.layout.activity_hospital_list
+        )
+
         firestore = FirebaseFirestore.getInstance()
 
         getHospitals()
 
-        btnAdd.setOnClickListener {
+        hospitalListBinding?.btnAdd?.setOnClickListener {
             startActivity(Intent(this, AddHospitalActivity::class.java))
         }
 
@@ -41,8 +46,8 @@ class HospitalListActivity : AppCompatActivity() {
                 }
             }
 
-            recyclerViewHospital.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-            recyclerViewHospital.adapter = HospitalAdapter(hospitalList)
+            hospitalListBinding?.recyclerViewHospital?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+            hospitalListBinding?.recyclerViewHospital?.adapter = HospitalAdapter(hospitalList)
         }
     }
 }

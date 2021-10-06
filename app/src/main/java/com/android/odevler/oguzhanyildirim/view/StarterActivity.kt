@@ -11,17 +11,21 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil
 import com.android.camp.R
+import com.android.camp.databinding.ActivityStarterBinding
 
 class StarterActivity : AppCompatActivity() {
 
-    private val btnContinue by lazy { findViewById<Button>(R.id.btnContinue) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_starter)
+        val starterBinding = DataBindingUtil.setContentView<ActivityStarterBinding>(
+            this,
+            R.layout.activity_starter
+        )
 
-        btnContinue.setOnClickListener {
+        starterBinding.btnContinue.setOnClickListener {
             startActivity(Intent(this@StarterActivity, HospitalListActivity::class.java))
         }
     }
