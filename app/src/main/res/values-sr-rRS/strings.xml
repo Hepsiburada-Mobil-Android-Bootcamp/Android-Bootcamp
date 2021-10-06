@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">camp</string>
+
+    <string name="first_fragment_label">Први фрагмент</string>
+    <string name="second_fragment_label">Други фрагмент</string>
+    <string name="next">Следећи</string>
+    <string name="previous">Претходна</string>
+
+    <string name="hello_first_fragment">Здраво први фрагмент</string>
+    <string name="hello_second_fragment">Здраво други фрагмент</string>
+    <string name="content_description">Опис садржаја</string>
+    <string name="song_name">Назив песме</string>
+    <string name="artists_name">Име уметника</string>
+    <string name="duration_time">Време трајања</string>
+    <string name="year">Година</string>
+    <string name="save">сачувати</string>
+    <string name="add_text">Додати текст</string>
+    <string name="add_song">Додај песму</string>
+    <string name="delete_all">Избриши све</string>
+    <string name="duration">Трајање</string>
+    <string name="finish_exam">Завршите испит</string>
+    <string name="phone_number">Број телефона</string>
+    <string name="login">Пријавите се</string>
+    <string name="phone_number_format">формат телефонског броја је 5321112233</string>
+    <string name="sms_code_validation">СМС код мора имати 6 цифара</string>
+    <string name="enter_sms_code">Унесите СМС код</string>
+    <string name="verify">Проверити</string>
+</resources>
