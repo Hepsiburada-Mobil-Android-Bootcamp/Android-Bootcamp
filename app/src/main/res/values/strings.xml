@@ -49,5 +49,8 @@
     <string name="save_exam">Kaydet</string>
     <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
     <string name="successful">Başarılı</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_client_id">Client Id</string>
     <!-- - - - - - - - - - - - - - - - -->
 </resources>
