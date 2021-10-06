@@ -5,25 +5,31 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
 
 import com.android.camp.data.model.Exam
+import com.android.camp.databinding.ActivityTravelBinding
 import com.android.camp.exam.ExamAdapter
 import com.android.odevler.sahinkapan.ticket.Ticket
 import com.android.odevler.sahinkapan.ticket.TicketAdapter
 import com.google.firebase.firestore.FirebaseFirestore
 
 class TravelActivity : AppCompatActivity() {
-    val addTravelFab by lazy { findViewById<View>(R.id.addTravel) }
-    val ticketRecyclerView by lazy { findViewById<RecyclerView>(R.id.ticketRecycler) }
+
+
+
     var firestore:FirebaseFirestore? = null
+
+    var bindingTravel:ActivityTravelBinding? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_travel)
 
+
+        bindingTravel = DataBindingUtil.setContentView(this,R.layout.activity_travel)
 
 
 
@@ -31,12 +37,12 @@ class TravelActivity : AppCompatActivity() {
         firestore = FirebaseFirestore.getInstance()
 
         val layoutManager=LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false)
-        ticketRecyclerView.layoutManager=layoutManager
+        bindingTravel?.ticketRecycler?.layoutManager=layoutManager
 
 
         bindTickets()
 
-        addTravelFab.setOnClickListener {
+        bindingTravel?.addTravel?.setOnClickListener {
             val intent = Intent(this,AddTravelActivity::class.java)
             startActivity(intent)
         }
@@ -57,7 +63,7 @@ class TravelActivity : AppCompatActivity() {
                 }
             }
 
-            ticketRecyclerView.adapter = TicketAdapter(this, travelList)
+            bindingTravel?.ticketRecycler?.adapter = TicketAdapter(this, travelList)
         }
 
 
