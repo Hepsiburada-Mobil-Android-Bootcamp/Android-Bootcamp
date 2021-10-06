@@ -15,18 +15,18 @@
         android:theme="@style/Theme.Camp">
         <activity
             android:name="com.android.firebase.auth.google.GoogleSignInActivity"
-            android:exported="true" >
+            android:exported="true" />
+        <activity
+            android:name=".navigationcomponent.BilgiYarismasiActivity"
+            android:exported="true"
+            android:label="@string/title_activity_bilgi_yarismasi"
+            android:theme="@style/Theme.Camp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".navigationcomponent.BilgiYarismasiActivity"
-            android:exported="true"
-            android:label="@string/title_activity_bilgi_yarismasi"
-            android:theme="@style/Theme.Camp.NoActionBar"></activity>
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
             android:exported="true"
