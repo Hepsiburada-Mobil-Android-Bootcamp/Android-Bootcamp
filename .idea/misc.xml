@@ -22,6 +22,7 @@
         <entry key="app/src/main/res/layout/item_answer.xml" value="0.335" />
         <entry key="app/src/main/res/layout/item_exam.xml" value="0.3170289855072464" />
         <entry key="app/src/main/res/layout/item_question.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_ticket.xml" value="0.3880208333333333" />
         <entry key="app/src/main/res/layout/ticket_item.xml" value="0.27024819350323986" />
       </map>
     </option>
