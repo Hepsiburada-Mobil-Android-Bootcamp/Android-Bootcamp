@@ -46,6 +46,7 @@
     <string name="lesson_name" translatable="false">Ders Adı</string>
     <string name="midterm_point" translatable="false">Vize Notu</string>
     <string name="final_point" translatable="false">Final Notu</string>
+    <string name="save_exam" translatable="false">Sınavı Kaydet</string>
     <string name="tum_alanlar_doldurulmalidir" translatable="false">Tüm alanlar doldurulmalıdır !</string>
     <string name="successful" translatable="false">Başarılı</string>
     <!-- TODO: Remove or change this placeholder text -->
