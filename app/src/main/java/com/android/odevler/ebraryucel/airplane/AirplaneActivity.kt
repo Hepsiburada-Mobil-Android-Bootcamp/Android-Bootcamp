@@ -27,6 +27,7 @@ class AirplaneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_airplane)
+        //supportActionBar!!.hide()
 
         firestore= Firebase.firestore
 
@@ -64,8 +65,10 @@ class AirplaneActivity : AppCompatActivity() {
                             val model=document.get("model") as? String
                             val owner=document.get("owner") as? String
                             val capacity=document.get("capacity") as? String
+                            // val downloadUrl=document.get("downloadUrl") as? String
 
                             val airplane=Airplane(manufacturer,model,owner,capacity?.toInt())
+                            //val airplane=Airplane(manufacturer,model,owner,downloadUrl,capacity?.toInt())
                             airplanes.add(airplane)
 
 
