@@ -1,113 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="15dp"
-    tools:context="com.android.odevler.oguzhanyildirim.view.AddHospitalActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutHospitalName"
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hospital Name"
-        app:counterEnabled="true"
-        app:counterMaxLength="50"
-        app:helperText="Please enter full name."
-        app:layout_constraintBottom_toTopOf="@+id/layoutHospitalAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        tools:context="com.android.odevler.oguzhanyildirim.view.AddHospitalActivity">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputHospitalName"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutHospitalName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:hint="Hospital Name"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:helperText="Please enter full name."
+            app:layout_constraintBottom_toTopOf="@+id/layoutHospitalAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_weight="1">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHospitalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutHospitalAddress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Address"
-        app:counterEnabled="true"
-        app:counterMaxLength="50"
-        app:helperText="Please enter full address."
-        app:layout_constraintBottom_toTopOf="@+id/layoutHospitalContact"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHospitalName"
-        android:layout_weight="1">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputHospitalAddress"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutHospitalAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:hint="Address"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:helperText="Please enter full address."
+            app:layout_constraintBottom_toTopOf="@+id/layoutHospitalContact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutHospitalName"
+            android:layout_weight="1">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHospitalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutHospitalContact"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contact"
-        app:counterEnabled="true"
-        app:counterMaxLength="50"
-        app:helperText="Ex. 2324845122"
-        app:layout_constraintBottom_toTopOf="@+id/layoutHospitalCapacity"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHospitalAddress"
-        android:layout_weight="1">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputHospitalContact"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutHospitalContact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:hint="Contact"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            app:helperText="Ex. 2324845122"
+            app:layout_constraintBottom_toTopOf="@+id/layoutHospitalCapacity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutHospitalAddress"
+            android:layout_weight="1">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHospitalContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutHospitalCapacity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="Capacity"
-        app:counterEnabled="true"
-        app:counterMaxLength="6"
-        app:helperText="Ex. 200"
-        app:layout_constraintBottom_toTopOf="@+id/btnSave"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutHospitalContact">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputHospitalCapacity"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutHospitalCapacity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number" />
+            android:layout_weight="1"
+            android:hint="Capacity"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            app:helperText="Ex. 200"
+            app:layout_constraintBottom_toTopOf="@+id/btnSave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutHospitalContact">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputHospitalCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
 
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="SAVE"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="SAVE"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
