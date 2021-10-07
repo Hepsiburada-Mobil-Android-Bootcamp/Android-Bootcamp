@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/ic_hexagonal.xml" value="0.223" />
         <entry key="app/src/main/res/drawable/item_answer.xml" value="0.223" />
         <entry key="app/src/main/res/drawable/selector_text_view.xml" value="0.255" />
+        <entry key="app/src/main/res/layout/activity_add_airplane.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_add_new_exam.xml" value="0.2831505483549352" />
         <entry key="app/src/main/res/layout/activity_add_new_question.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_add_travel.xml" value="0.335" />
