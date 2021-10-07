@@ -1,43 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="@dimen/twelve_margin"
-    app:cardCornerRadius="@dimen/twenty_margin"
-    app:cardBackgroundColor="@color/blue"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
-        android:padding="@dimen/twelve_margin"
+    <data>
+        <variable
+            name="StudentExam"
+            type="com.android.odevler.talhadengiz.data.model.StudentExam" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/twelve_margin"
+        app:cardCornerRadius="@dimen/twenty_margin"
+        app:cardBackgroundColor="@color/blue"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/tv_student_number"
-            style="@style/TextView"/>
-
-        <TextView
-            android:id="@+id/tv_lesson_name"
-            android:layout_marginTop="@dimen/two_margin"
-            style="@style/TextView" />
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:padding="@dimen/twelve_margin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/two_margin"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_midterm_point"
-                style="@style/TextView"
-                android:layout_weight="1"/>
+                android:id="@+id/tv_student_number"
+                android:text="@{StudentExam.studentNumber.toString()}"
+                style="@style/TextView" />
 
             <TextView
-                android:id="@+id/tv_final_point"
-                style="@style/TextView"
-                android:layout_weight="1"/>
+                android:id="@+id/tv_lesson_name"
+                android:text="@{StudentExam.lessonName}"
+                android:layout_marginTop="@dimen/two_margin"
+                style="@style/TextView" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/two_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_midterm_point"
+                    android:text="@{StudentExam.midtermPoint.toString()}"
+                    style="@style/TextView"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_final_point"
+                    android:text="@{StudentExam.finalPoint.toString()}"
+                    style="@style/TextView"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
         </LinearLayout>
-
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</layout>
