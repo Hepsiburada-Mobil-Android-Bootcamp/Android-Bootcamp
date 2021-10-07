@@ -25,3 +25,30 @@ firestore.collection("isimsoyisim").addSnasphoListener {
 }
 
 ----------------------------------------------------------
+
+ödevleri databinding ile kullanalım.
+
+LoginTypeActivity, LoginTypeFragment => giriş tipleri 12 button ile listeleceğiz. => Umut
+
+Activty, Fragment, FaceBookLoginActivity, FacebookLoginFragment
+Email/password => SignIn=> Akın,
+    * Şifremi Unuttum => Çağrı
+Phone => yapıldı.
+Anonymous => Serhat Mert
+Google => Abdulvahid
+Apple => Serkan
+Yahoo => MehmetAli
+Facebook => Muruvvet
+GitHub => Nahit
+Play Games => Şeyma
+Microsoft => Sevgi
+Game Center => Damla
+Twitter => Eda
+
+profile fragment ve activity: ad,soyad, nickname, phonenumber, mail, şifre User()
+firestore users/user --> Ayşe Şenses
+
+Yeni Dil Ekleme Sayfası: dil Adı ve kodu olacak => Mehmet Serkan Language(name:String, code:String)
+firestore da languages/language
+
+Dil Listeleme Sayfası => Şahin listeleme ve ekleme butonu eklenecek

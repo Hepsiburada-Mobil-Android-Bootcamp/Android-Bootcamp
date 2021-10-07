@@ -35,7 +35,7 @@ class RecyclerAdapter(val airplanes:ArrayList<Airplane>) :RecyclerView.Adapter<R
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AirplaneHolder {
-        val view=AirplaneRecyclerviewRowBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val view= AirplaneRecyclerviewRowBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return AirplaneHolder(view.root)
     }
 

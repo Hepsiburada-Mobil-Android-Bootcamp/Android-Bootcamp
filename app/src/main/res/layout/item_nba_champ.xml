@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.odevler.ozantakir.NbaChamp.NbaChampAdapter">
+
+    <TextView
+        android:id="@+id/team_name_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="6dp"
+        android:text="NBA Champion Team"
+        app:layout_constraintBottom_toTopOf="@+id/year_out"
+        app:layout_constraintEnd_toStartOf="@+id/mvp_out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/year_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="513dp"
+        android:text="Championship Year"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/games_out"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_name_out" />
+
+    <TextView
+        android:id="@+id/mvp_out"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="3dp"
+        android:text="Finals' MVP"
+        app:layout_constraintBottom_toTopOf="@+id/games_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/team_name_out"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/games_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="513dp"
+        android:text="Games Played in Finals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/year_out"
+        app:layout_constraintTop_toBottomOf="@+id/mvp_out" />
+</androidx.constraintlayout.widget.ConstraintLayout>
