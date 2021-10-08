@@ -4,17 +4,21 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.databinding.BindingAdapter
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
+import com.android.camp.databinding.ActivityAddNewFlightBinding
+import com.android.camp.databinding.ActivityFlightMainBinding
 import com.android.odevler.serkanozdemir.data.Flight
 import com.android.odevler.serkanozdemir.flights.AddNewFlight
 import com.android.odevler.serkanozdemir.flights.FlightAdapter
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FlightMainActivity : AppCompatActivity() {
-    private val recyclerView by lazy { findViewById<RecyclerView>(R.id.flights) }
-    private val addFlightButton by lazy { findViewById<Button>(R.id.addFlight) }
+
+    private var bindingFlight: ActivityFlightMainBinding?=null
 
     var firestore: FirebaseFirestore? = null
 
@@ -32,7 +36,8 @@ class FlightMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_flight_main)
-        addFlightButton.setOnClickListener {
+        bindingFlight = DataBindingUtil.setContentView(this,R.layout.activity_flight_main)
+        bindingFlight?.addFlight?.setOnClickListener {
             val intent = Intent(this,AddNewFlight::class.java)
             startActivity(intent)
         }
@@ -44,8 +49,9 @@ class FlightMainActivity : AppCompatActivity() {
     }
 
     private fun initFlights(){
-        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        bindingFlight?.flights?.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
     }
+
     private fun bindFlights(){
         firestore?.collection("serkanozdemir")?.addSnapshotListener { value, error ->
             val list = arrayListOf<Flight>()
@@ -56,7 +62,7 @@ class FlightMainActivity : AppCompatActivity() {
                 }
             }
 
-            recyclerView.adapter = FlightAdapter(this, list)
+            bindingFlight?.flights?.adapter = FlightAdapter(this, list)
         }
         //recyclerView.adapter = FlightAdapter(this, flightList)
     }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">camp</string>
+    <string name="title_activity_questions">PerguntasActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primeiro Fragmento</string>
+    <string name="second_fragment_label">Segundo Fragmento</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+
+    <string name="hello_first_fragment">Olá Primeiro Fragmento</string>
+    <string name="hello_second_fragment">Olá Segundo Fragmento. Arg: %1$s</string>
+    <string name="content_description">Descrição do conteúdo</string>
+    <string name="song_name">Nome da música</string>
+    <string name="artists_name">Nome do Artista</string>
+    <string name="duration_time">Tempo de duração</string>
+    <string name="year">Ano</string>
+    <string name="save">Salve</string>
+    <string name="add_text">Adicione texto</string>
+    <string name="add_song">Adicionar música</string>
+    <string name="delete_all">Apagar tudo</string>
+    <string name="duration">%d:%d</string>
+    <string name="finish_exam">Terminar Exame</string>
+    <string name="phone_number">Número de telefone</string>
+    <string name="login">Conecte-se</string>
+    <string name="phone_number_format">O formato do número de telefone é 5321112233</string>
+    <string name="sms_code_validation">O código sms deve ter 6 digitos </string>
+    <string name="welcome_user">Receber %1$s</string>
+    <string name="sign_out">Sair</string>
+    <string name="sms_code_warning">Insira o seu código sms de 6 dígitos.</string>
+    <string name="enter_sms_code">Insira o código de sms</string>
+    <string name="verify">Verificar</string>
+    <string name="title_activity_bilgi_yarismasi">Competição de Conhecimento Activity</string>
+    <string name="navigation_drawer_open">Abra a gaveta de navegação</string>
+    <string name="navigation_drawer_close">Fechar gaveta de navegação</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabeçalho de navegação</string>
+    <string name="action_settings">Definições</string>
+
+    <string name="menu_home">Casa</string>
+    <string name="menu_gallery">Galeria</string>
+    <string name="menu_slideshow">Apresentação de slides</string>
+</resources>

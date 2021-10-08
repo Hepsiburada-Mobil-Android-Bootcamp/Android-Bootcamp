@@ -1,72 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.android.odevler.serkanozdemir.flights.AddNewFlight"
-    android:padding="10dp"
-    >
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/edtflightNumber"
-        android:hint="Flight Number"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
+        <variable
+            name="flight"
+            type="com.android.odevler.serkanozdemir.data.Flight" />
+    </data>
 
-    <EditText
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/edtfrom"
-        android:hint="From"
-        android:textSize="24sp"
-        android:textColor="#020201"
-        app:layout_constraintStart_toStartOf="@id/edtflightNumber"
-        app:layout_constraintTop_toBottomOf="@id/edtflightNumber"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/edtto"
-        android:hint="To"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@id/edtfrom"
-        app:layout_constraintTop_toBottomOf="@id/edtfrom"/>
+        android:layout_height="match_parent"
+        tools:context="com.android.odevler.serkanozdemir.flights.AddNewFlight"
+        android:padding="10dp">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/edtdepartureTime"
-        android:hint="Departure Time"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@id/edtto"
-        app:layout_constraintTop_toBottomOf="@id/edtto"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edtflightNumber"
+            android:hint="Flight Number"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edtlandingTime"
-        android:hint="Landing Time"
-        android:textSize="24sp"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@id/edtdepartureTime"
-        app:layout_constraintTop_toBottomOf="@id/edtdepartureTime"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/saveButton"
-        android:text="Kaydet"
-        app:layout_constraintTop_toBottomOf="@id/edtlandingTime"
-        app:layout_constraintStart_toStartOf="@id/edtlandingTime"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edtfrom"
+            android:hint="From"
+            android:textSize="24sp"
+            android:textColor="#020201"
+            app:layout_constraintStart_toStartOf="@id/edtflightNumber"
+            app:layout_constraintTop_toBottomOf="@id/edtflightNumber" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edtto"
+            android:hint="To"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@id/edtfrom"
+            app:layout_constraintTop_toBottomOf="@id/edtfrom" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edtdepartureTime"
+            android:hint="Departure Time"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@id/edtto"
+            app:layout_constraintTop_toBottomOf="@id/edtto" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtlandingTime"
+            android:hint="Landing Time"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@id/edtdepartureTime"
+            app:layout_constraintTop_toBottomOf="@id/edtdepartureTime" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            android:text="Kaydet"
+            app:layout_constraintTop_toBottomOf="@id/edtlandingTime"
+            app:layout_constraintStart_toStartOf="@id/edtlandingTime"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

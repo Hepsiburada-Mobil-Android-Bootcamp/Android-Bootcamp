@@ -2,27 +2,24 @@ package com.android.odevler.serkanozdemir.flights
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import com.android.camp.R
+import com.android.camp.databinding.ActivityAddNewFlightBinding
 import com.android.odevler.serkanozdemir.data.Flight
 import com.google.firebase.firestore.FirebaseFirestore
 
 class AddNewFlight : AppCompatActivity() {
-    val edtFlightNumber by lazy { findViewById<EditText>(R.id.edtflightNumber) }
-    val edtFrom by lazy { findViewById<EditText>(R.id.edtfrom) }
-    val edtTo by lazy { findViewById<EditText>(R.id.edtto) }
-    val edtDepartureTime by lazy { findViewById<EditText>(R.id.edtdepartureTime) }
-    val edtLandingTime by lazy { findViewById<EditText>(R.id.edtlandingTime) }
-    val saveButton by lazy { findViewById<Button>(R.id.saveButton) }
 
+    private var bindingFlight: ActivityAddNewFlightBinding?=null
     private var firestore: FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        bindingFlight = DataBindingUtil.setContentView(this,R.layout.activity_add_new_flight)
         setContentView(R.layout.activity_add_new_flight)
-        saveButton.setOnClickListener{
+        bindingFlight?.saveButton?.setOnClickListener{
             if (isValid()) {
                 save()
             }
@@ -32,11 +29,11 @@ class AddNewFlight : AppCompatActivity() {
     }
 
     private fun save() {
-        val flight = Flight(flightNumber = edtFlightNumber.text.toString(),
-            from = edtFrom.text.toString(),
-            to = edtTo.text.toString(),
-            departureTime = edtDepartureTime.text.toString(),
-            landingTime = edtLandingTime.text.toString())
+        val flight = Flight(flightNumber = bindingFlight?.edtflightNumber?.text.toString(),
+            from = bindingFlight?.edtfrom?.text.toString(),
+            to = bindingFlight?.edtto?.text.toString(),
+            departureTime = bindingFlight?.edtdepartureTime?.text.toString(),
+            landingTime = bindingFlight?.edtlandingTime?.text.toString())
         firestore?.collection("serkanozdemir")?.add(flight)?.addOnCompleteListener { task ->
             when (task.isSuccessful) {
                 true -> finish()
@@ -59,13 +56,13 @@ class AddNewFlight : AppCompatActivity() {
         var isValid = true
 
         arrayListOf(
-            edtFlightNumber,
-            edtFrom,
-            edtTo,
-            edtDepartureTime,
-            edtLandingTime
+            bindingFlight?.edtflightNumber,
+            bindingFlight?.edtfrom,
+            bindingFlight?.edtto,
+            bindingFlight?.edtdepartureTime,
+            bindingFlight?.edtlandingTime
         ).forEach { editText ->
-            isValid = editText.isValid() && isValid
+            isValid = editText?.isValid() == true && isValid
         }
 
         return isValid

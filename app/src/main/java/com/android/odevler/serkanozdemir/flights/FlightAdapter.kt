@@ -6,29 +6,32 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
+import com.android.camp.databinding.FragmentNickNameLoginBinding
+import com.android.camp.databinding.ItemFlightBinding
 import com.android.odevler.serkanozdemir.data.Flight
+import java.util.zip.Inflater
 
 class FlightAdapter(private val context :Context, private val list : ArrayList<Flight>) : RecyclerView.Adapter<FlightAdapter.FlightViewHolder>() {
-
-    inner class FlightViewHolder (view: View) : RecyclerView.ViewHolder(view){
-        val flightNumber by lazy { view.findViewById<TextView>(R.id.flightNumber) }
-        val from by lazy { view.findViewById<TextView>(R.id.from) }
-        val to by lazy { view.findViewById<TextView>(R.id.to) }
-        val departureTime by lazy { view.findViewById<TextView>(R.id.departureTime) }
-        val landingTime by lazy { view.findViewById<TextView>(R.id.landingTime) }
-    }
+    private var _binding: ItemFlightBinding? = null
+    private val binding get() = _binding!!
+    inner class FlightViewHolder (view: View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FlightViewHolder
-        =FlightViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_flight,parent,false))
+    {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_flight,parent,false)
+        _binding = DataBindingUtil.bind(view)
+        return FlightViewHolder(view)
+    }
 
     override fun onBindViewHolder(holder: FlightViewHolder, position: Int) {
-        holder.flightNumber.text = list[position].flightNumber
-        holder.from.text = list[position].from
-        holder.to.text = list[position].to
-        holder.departureTime.text = list[position].departureTime.toString()
-        holder.landingTime.text = list[position].landingTime.toString()
+        binding.flightNumber.text = list[position].flightNumber
+        binding.from.text = list[position].from
+        binding.to.text = list[position].to
+        binding.departureTime.text = list[position].departureTime.toString()
+        binding.landingTime.text = list[position].landingTime.toString()
         holder.itemView.setOnClickListener{
            Toast.makeText(context,list[position].flightStatus(),Toast.LENGTH_LONG).show()
         }
