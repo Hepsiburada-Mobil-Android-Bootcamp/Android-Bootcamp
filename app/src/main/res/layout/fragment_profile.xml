@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.android.odevler.talhadengiz.ui.ProfileFragment">
+
+        <TextView
+            android:id="@+id/tv_title_profile"
+            android:text="@string/profile_settings"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:padding="@dimen/twelve_margin"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:background="@drawable/kapak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_profile"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_profile"
+            app:layout_constraintVertical_bias="1.5" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/sixteen_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewProfileTitle"
+                    android:layout_weight="1"
+                    android:text="@string/email" />
+
+                <TextView
+                    style="@style/TextViewProfile"
+                    android:layout_weight="1"
+                    android:text="username@mail.com"
+                    app:drawableEndCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_email">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewProfileTitle"
+                    android:layout_weight="1"
+                    android:text="@string/username" />
+
+                <TextView
+                    style="@style/TextViewProfile"
+                    android:layout_weight="1"
+                    android:text="\@username"
+                    app:drawableEndCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_username">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewProfileTitle"
+                    android:layout_weight="1"
+                    android:text="@string/password" />
+
+                <TextView
+                    style="@style/TextViewProfile"
+                    android:layout_weight="1"
+                    android:text="************"
+                    app:drawableEndCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_password">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewProfileTitle"
+                    android:layout_weight="1"
+                    android:text="@string/location" />
+
+                <TextView
+                    style="@style/TextViewProfile"
+                    android:layout_weight="1"
+                    android:text="İstanbul"
+                    app:drawableEndCompat="@drawable/ic_arrow_right" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/sixteen_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_location">
+
+            <Switch
+                android:id="@+id/sw_gmail"
+                style="@style/TextViewProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:text="@string/gmail"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_gmail">
+
+            <Switch
+                android:id="@+id/sw_facebook"
+                style="@style/TextViewProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:text="@string/facebook"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_facebook">
+
+            <Switch
+                android:id="@+id/sw_twitter"
+                style="@style/TextViewProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:text="@string/twitter"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/sixteen_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_twitter">
+
+            <TextView
+                style="@style/TextViewProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:drawablePadding="@dimen/eighteen_margin"
+                android:text="@string/terms"
+                app:drawableEndCompat="@drawable/ic_arrow_right" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/twenty_margin"
+            android:layout_marginTop="@dimen/eight_margin"
+            app:cardBackgroundColor="#7879F1"
+            app:cardCornerRadius="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_terms">
+
+            <TextView
+                style="@style/TextViewProfileTitle"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/twenty_margin"
+                android:drawablePadding="@dimen/eighteen_margin"
+                android:text="@string/privacy"
+                app:drawableEndCompat="@drawable/ic_arrow_right" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
