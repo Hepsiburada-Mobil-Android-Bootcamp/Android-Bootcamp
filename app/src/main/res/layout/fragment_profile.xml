@@ -9,12 +9,18 @@
         android:layout_height="wrap_content"
         tools:context="com.android.odevler.talhadengiz.ui.ProfileFragment">
 
-        <ImageView
-            android:id="@+id/img_header"
+        <TextView
+            android:id="@+id/tv_title_profile"
+            android:text="@string/profile_settings"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:padding="@dimen/twelve_margin"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/kapak"
+            android:background="@drawable/kapak"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -24,10 +30,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/profile"
-            app:layout_constraintBottom_toBottomOf="@+id/img_header"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_title_profile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/img_header"
-            app:layout_constraintTop_toTopOf="@+id/img_header"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_profile"
+            app:layout_constraintTop_toTopOf="@+id/tv_title_profile"
             app:layout_constraintVertical_bias="1.5" />
 
         <androidx.cardview.widget.CardView
@@ -238,8 +244,8 @@
                 android:layout_width="match_parent"
                 android:layout_marginHorizontal="@dimen/twenty_margin"
                 android:drawablePadding="@dimen/eighteen_margin"
-                app:drawableEndCompat="@drawable/ic_arrow_right"
-                android:text="@string/terms" />
+                android:text="@string/terms"
+                app:drawableEndCompat="@drawable/ic_arrow_right" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -247,7 +253,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/twenty_margin"
-            android:layout_marginTop="@dimen/eighteen_margin"
+            android:layout_marginTop="@dimen/eight_margin"
             app:cardBackgroundColor="#7879F1"
             app:cardCornerRadius="32dp"
             app:layout_constraintEnd_toEndOf="parent"

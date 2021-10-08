@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import com.android.camp.MainActivity
 import com.android.camp.R
 import com.android.camp.navigationcomponent.BilgiYarismasiActivity
+import com.android.odevler.talhadengiz.ui.ProfileFragment
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
@@ -23,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
 
         createPhoneNumberCallbacks()
 
-        val loginFragment = LoginFragment(phoneNumberCallbacks)
+        val loginFragment = ProfileFragment()
         openFragment(loginFragment)
     }
 
