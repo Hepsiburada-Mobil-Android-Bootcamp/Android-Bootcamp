@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/drawable/corner_radious_bg.xml" value="0.313" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/drawable/corner_radious_bg_btn.xml" value="0.313" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_bilgi_yarismasi.xml" value="0.3338541666666667" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_email_login.xml" value="0.55" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/fragment_email_login.xml" value="0.33" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/fragment_email_sign_up.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/fragment_login.xml" value="0.3109375" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/layout/snackbar_example.xml" value="0.3854166666666667" />
+        <entry key="..\:/Users/keski/AndroidStudioProjects/android-bootcamp/app/src/main/res/menu/activity_main_drawer.xml" value="0.3338541666666667" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_airplane.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_airplane.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.36666666666666664" />

@@ -23,7 +23,7 @@
     <string name="phone_number">Phone Number</string>
     <string name="login">Login</string>
     <string name="phone_number_format">phone number format is 5321112233</string>
-    <string name="sms_code_validation">sms code 6 haneli olmalıdır</string>
+    <string name="sms_code_validation">SMS code must be 6 digit</string>
     <string name="enter_sms_code">Enter sms Code</string>
     <string name="verify">Verify</string>
 </resources>

@@ -40,4 +40,19 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kim_500_milyon_ister">Kim 500 Milyon İster</string>
+
+    <string name="email_login">Email</string>
+    <string name="password_email_login">Password</string>
+    <string name="confirm_password_email">Confirm Password</string>
+    <string name="signup_email">Signup</string>
+    <string name="login_email_buton">Login</string>
+    <string name="or_login_with_email">or login with</string>
+    <string name="signuptext_email">Signup</string>
+    <string name="or_signup_with_email">or signup with</string>
+    <string name="dummydesc">With HepsiBurada Bootcamp Students...</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="not_a_member_yet">Not a member yet?</string>
 </resources>
