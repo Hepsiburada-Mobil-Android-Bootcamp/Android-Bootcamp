@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">camp</string>
+    <string name="title_activity_questions">Activité de questions</string>
+    <string name="first_fragment_label">Premier fragment </string>
+    <string name="second_fragment_label">Deuxième fragment</string>
+    <string name="next">Prochaine</string>
+    <string name="previous">Précédente</string>
+    <string name="hello_first_fragment">Bonjour premier fragment </string>
+    <string name="hello_second_fragment">Bonjour deuxième fragment</string>
+    <string name="content_description">Description du contenu</string>
+    <string name="song_name">Titre de chanson</string>
+    <string name="artists_name">Nom des artistes</string>
+    <string name="duration_time">Durée</string>
+    <string name="year">Année </string>
+    <string name="save">sauvegarder</string>
+    <string name="add_text">Ajouter du texte</string>
+    <string name="add_song">ajouter une chanson</string>
+    <string name="delete_all">tout supprimer</string>
+    <string name="finish_exam">Examen de fin </string>
+    <string name="phone_number">numéro de téléphone</string>
+    <string name="login">connexion</string>
+    <string name="phone_number_format">Il doit être au format 532112233.</string>
+    <string name="sms_code_validation">le code SMS doit être composé de 6 chiffres</string>
+    <string name="welcome_user">Bienvenue</string>
+    <string name="enter_sms_code">Entrez le code SMS</string>
+    <string name="verify">Vérifier</string>
+
+
+
+
+
+</resources>
