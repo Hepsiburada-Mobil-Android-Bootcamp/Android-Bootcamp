@@ -1,29 +1,31 @@
-package com.android.odevler.sahranurer.adapter
+package com.android.odevler.sahranurer
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
-import com.android.camp.data.model.Question
-import com.android.camp.question.QuestionAdapter
+import com.android.camp.databinding.ActivityBookListBinding
+import com.android.odevler.sahranurer.adapter.BookAdapter
 import com.android.odevler.sahranurer.data.Book
 import com.google.firebase.firestore.FirebaseFirestore
 
 class BookActivity: AppCompatActivity()  {
 
     private var firestore:FirebaseFirestore? = null
+    var binding:ActivityBookListBinding? = null
 
-    private val recyclerView by lazy{findViewById<RecyclerView>(R.id.rv)}
-    private val floatingActionButton by lazy{findViewById<View>(R.id.floatingActionButton)}
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_book_list)
-        floatingActionButton.setOnClickListener {
-            val intent = Intent(this,AddBookActivity::class.java)
+
+
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_book_list)
+
+        binding?.floatingActionButton?.setOnClickListener {
+            val intent = Intent(this, AddBookActivity::class.java)
             startActivity(intent)
         }
         initBook()
@@ -33,13 +35,13 @@ class BookActivity: AppCompatActivity()  {
     }
 
     fun initBook(){
-        recyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        binding?.rv?.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
     }
     fun bindBook(){
 
         firestore?.collection("SahranurEr")?.get()?.addOnSuccessListener { snapshot ->
             snapshot.toObjects(Book::class.java)?.let { books ->
-                recyclerView.adapter = BookAdapter(books as ArrayList<Book>)
+                binding?.rv?.adapter = BookAdapter(books as ArrayList<Book>)
             }
 
         }

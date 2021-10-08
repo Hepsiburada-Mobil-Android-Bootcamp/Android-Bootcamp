@@ -41,11 +41,17 @@
             android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
+            android:name="com.android.odevler.sahranurer.AddBookActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
-            android:exported="true" />
+            android:name="com.android.odevler.sahranurer.BookActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.android.odevler.cagrikilic.PaperListActivity"
             android:exported="true" />
@@ -121,11 +127,7 @@
             android:name=".login.LoginActivity"
             android:exported="true"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
