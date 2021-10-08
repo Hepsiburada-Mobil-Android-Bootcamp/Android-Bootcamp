@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/yahoo_frame"
+        android:layout_height="match_parent"
+        tools:context="com.android.firebase.auth.yahoo.YahooLogin">
+
+
+    </FrameLayout>
+</layout>
