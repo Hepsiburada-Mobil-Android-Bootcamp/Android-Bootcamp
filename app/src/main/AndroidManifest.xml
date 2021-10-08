@@ -15,7 +15,9 @@
         android:theme="@style/Theme.Camp">
         <activity
             android:name=".firebase.auth.email_auth.SplashScreen"
-           />
+            android:exported="true" />
+
+
         <activity
             android:name=".firebase.auth.email_auth.EmailLoginActivity"
             android:exported="true"/>

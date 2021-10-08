@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.android.camp.R
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
 
@@ -19,7 +21,7 @@ class EmailLoginFragment : Fragment() {
     private var confirmPaswordText : EditText? = null
     private var signupBttn : TextView? = null
     private var notAMemberYet : View ? = null
-
+    private var linearLayout : LinearLayout? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +42,11 @@ class EmailLoginFragment : Fragment() {
         paswordText = view.findViewById(R.id.passwordText)
         signupBttn = view.findViewById(R.id.loginBttn)
         notAMemberYet = view.findViewById(R.id.member)
+        linearLayout = view.findViewById(R.id.linearLayout)
+
+        view.findViewById<View>(R.id.linearLayout).setOnClickListener {
+            onSNACK(view,"Henuz eklenmedi")
+        }
         view.findViewById<View>(R.id.member).setOnClickListener {
             openFragment(EmailSignUpFragment())
         }
@@ -50,6 +57,11 @@ class EmailLoginFragment : Fragment() {
 //        val manager = supportFragmentManager.beginTransaction()
 //        manager.replace(R.id.frame_layout, fragment)
 //        manager.commitAllowingStateLoss()
+    } private fun onSNACK(view: View, text:String){
+        val snack = Snackbar.make(view,text, Snackbar.LENGTH_LONG)
+
+        snack.show()
+
     }
 
 

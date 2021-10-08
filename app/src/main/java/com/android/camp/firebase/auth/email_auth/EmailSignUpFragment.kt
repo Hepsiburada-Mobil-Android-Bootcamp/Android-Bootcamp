@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
 import com.android.camp.R
 import com.android.camp.login.LoginFragment
 import com.android.camp.navigationcomponent.BilgiYarismasiActivity
@@ -23,6 +25,7 @@ class EmailSignUpFragment : Fragment() {
     private var confirmPaswordText : EditText ? = null
     private var signupBttn : TextView ? = null
     private var alreadyHaveAnAccount : View ? = null
+    private var linearLayout : LinearLayout ? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,8 +50,13 @@ class EmailSignUpFragment : Fragment() {
         confirmPaswordText = view.findViewById(R.id.confirmPasswordText)
         signupBttn = view.findViewById(R.id.signupBttn)
         alreadyHaveAnAccount = view.findViewById(R.id.account)
+        linearLayout = view.findViewById(R.id.linearLayout)
+
         view.findViewById<View>(R.id.account).setOnClickListener {
             openFragment(EmailLoginFragment())
+        }
+        view.findViewById<View>(R.id.linearLayout).setOnClickListener {
+            onSNACK(view,"Henuz eklenmedi")
         }
         view.findViewById<View>(R.id.signupBttn).setOnClickListener {
           check =  checkPassword(paswordText,confirmPaswordText,view)
