@@ -108,17 +108,17 @@ class AddAirplaneActivity : AppCompatActivity() {   //Firebase storage erişimi 
     if (!(manifacturer.isNullOrBlank() || model.isNullOrBlank() || owner.isNullOrBlank() || capacity.isNullOrBlank())) {
 
 
-        //val imgName="airplane-"+manifacturer+model+owner
-        //val imgReference=storage.reference.child("img").child(imgName)
+        //val imgName="airplane-"+manifacturer+model+owner   // Image name
+        //val imgReference=storage.reference.child("img").child(imgName) // Image directory
 
-        //selectedPicture.let {
-        //imgReference.putFile(selectedPicture!!).addOnSuccessListener {
+        //selectedPicture?.let {
+        //imgReference.putFile(selectedPicture!!).addOnSuccessListener { // Seçilen resmin URI'si putFile metoduna parametre olarak verilerek URI dizinindeki resim imgReference'te belirtilen dizine yüklenir.
 
 
-        // imgReference.downloadUrl.addOnSuccessListener {
+        // imgReference.downloadUrl.addOnSuccessListener {  //Eğer yükleme başarılıysa imgReference.downloadUrl kısmı stringe çevrilerek Airplane
         //    val downloadUrl=it.toString()
 
-        // val airplane=Airplane(manifacturer,model,owner,downloadUrl,capacity.toInt())
+        // val airplane=Airplane(manifacturer,model,owner,downloadUrl,capacity.toInt())  //Nesne olarak kaydedilecekse Airplane nesnesi oluşturulur aksi halde aşağıdaki şekilde hashmap şeklinde kaydedilir.
 
         val hashmap =
             hashMapOf<String, Any>() // Input olarak verilen değerlerin hashmap şeklinde firebase'e kaydedilmesi
@@ -126,6 +126,7 @@ class AddAirplaneActivity : AppCompatActivity() {   //Firebase storage erişimi 
         hashmap.put("model", model)
         hashmap.put("owner", owner)
         hashmap.put("capacity", capacity)
+        //hashmap.put("downloadUrl",downloadUrl)
 
         firestore.collection("ebraryucel").add(hashmap).addOnSuccessListener {
             Toast.makeText(
