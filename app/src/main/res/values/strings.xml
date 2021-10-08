@@ -77,4 +77,8 @@
     <string name="dummydesc">With HepsiBurada Bootcamp Students...</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="app_name" translatable="false">Address</string>
+    <string name="actvHint" translatable="false">Şehir</string>
+    <string name="actvHint2" translatable="false">İlçe</string>
+    <string name="adresBilgileri" translatable="false">Mahalle, sokak, cadde ve diğer bilgileri giriniz</string>
 </resources>
