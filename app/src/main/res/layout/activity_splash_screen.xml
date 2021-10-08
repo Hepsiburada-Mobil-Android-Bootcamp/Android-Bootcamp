@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#4d0f0f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".firebase.auth.email_auth.SplashScreen">
+
+        <ImageView
+
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/questionblack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.233" />
+
+        <ImageView
+            android:id="@+id/imageGold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/questiongold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView1"
+            app:layout_constraintEnd_toEndOf="@+id/imageView1"
+            app:layout_constraintStart_toStartOf="@+id/imageView1"
+            app:layout_constraintTop_toTopOf="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/yasinCetin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yasin Çetin'le"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.589" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kim_500_milyon_ister"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yasinCetin"
+            app:layout_constraintVertical_bias="0.067" />
+
+        <TextView
+            android:id="@+id/dummyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummydesc"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_text"
+            app:layout_constraintVertical_bias="0.884" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
