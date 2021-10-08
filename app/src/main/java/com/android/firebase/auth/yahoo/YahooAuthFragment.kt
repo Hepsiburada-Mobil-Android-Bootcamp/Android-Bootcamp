@@ -16,6 +16,7 @@ import com.google.firebase.auth.*
 import java.util.concurrent.TimeUnit
 
 
+/* Mehmet Ali Vargün */
 class YahooAuthFragment : Fragment() {
     private var _binding: FragmentYahooAuthBinding? = null
     private val auth by lazy { FirebaseAuth.getInstance() }
@@ -27,7 +28,6 @@ class YahooAuthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentYahooAuthBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
         return binding.root
     }
 
@@ -44,11 +44,11 @@ class YahooAuthFragment : Fragment() {
 
         activity?.let {
             auth
-                .startActivityForSignInWithProvider( /* activity= */it, provider.build())
+                .startActivityForSignInWithProvider( it, provider.build())
                 .addOnSuccessListener(
                     OnSuccessListener<AuthResult?> {
                         Toast.makeText(activity, "Logged in", Toast.LENGTH_SHORT).show()
-                        startActivity(Intent(activity, MainActivity::class.java))
+                        startActivity(Intent(activity, BilgiYarismasiActivity::class.java))
                         requireActivity().finish()
 
                     })

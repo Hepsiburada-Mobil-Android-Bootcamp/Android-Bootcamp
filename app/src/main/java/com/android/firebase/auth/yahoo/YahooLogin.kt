@@ -13,10 +13,9 @@ import com.android.camp.databinding.ActivityYahooLoginBinding
 import com.android.camp.login.LoginFragment
 import com.google.firebase.auth.FirebaseAuth
 
-
+/* Mehmet Ali Vargün */
 class YahooLogin : AppCompatActivity() {
 
-    private val auth by lazy { FirebaseAuth.getInstance() }
     private lateinit var binding: ActivityYahooLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
