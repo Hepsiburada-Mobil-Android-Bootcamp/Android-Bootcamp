@@ -22,7 +22,6 @@
             android:name=".firebase.auth.email_auth.EmailLoginActivity"
             android:exported="true"/>
 
-
         <activity
             android:name=".navigationcomponent.BilgiYarismasiActivity"
             android:exported="true"
@@ -76,12 +75,15 @@
         <activity
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
+
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
             android:exported="true" />
+
         <activity
             android:name="com.android.odevler.akinkeskinbas.HomeActivity"
             android:exported="true" />
@@ -94,6 +96,8 @@
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.FootballListActivity"
             android:exported="true" />
+
+
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
             android:exported="true" />
@@ -112,14 +116,24 @@
         <activity
             android:name=".question.QuestionsActivity"
             android:exported="true" />
-         <activity
-         android:name=".login.LoginActivity"
-         android:exported="true" >
-         <intent-filter>
-         <action android:name="android.intent.action.MAIN" />
-         <category android:name="android.intent.category.LAUNCHER" />
-         </intent-filter>
-         </activity>
+
+        <activity
+            android:name="com.android.odevler.talhadengiz.ui.AddNewStudentExam"
+            android:exported="true" />
+        <activity
+            android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
             android:exported="true" />
@@ -150,11 +164,6 @@
         <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
