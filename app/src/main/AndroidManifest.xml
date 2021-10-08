@@ -118,7 +118,7 @@
             android:exported="true" />
 
         <activity
-            android:name="com.android.odevler.talhadengiz.ui.AddNewStudentExam"
+            android:name="com.android.odevler.talhadengiz.ui.AddNewStudentExamActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
