@@ -26,9 +26,9 @@ class StudentExamTest {
     @Test
     fun calculateAverage(){
         //Success scenario
-        Assert.assertTrue(studentExam.calculateAverage(studentExam.midtermPoint,studentExam.finalPoint) >= 60.0)
+        Assert.assertTrue(studentExam.calculateAverage(studentExam.midtermPoint!!,studentExam.finalPoint!!) >= 60.0)
 
         //Fail scenario
-        Assert.assertFalse(studentExam.calculateAverage(studentExam.midtermPoint,studentExam.finalPoint) < 60.0)
+        Assert.assertFalse(studentExam.calculateAverage(studentExam.midtermPoint!!,studentExam.finalPoint!!) < 60.0)
     }
 }

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+
+    <variable
+        name="car"
+        type="com.android.odevler.mehmetalivargun.data.Car" />
+</data>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -43,6 +50,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="20sp"
+                    android:text="@{car.brand}"
                     android:gravity="center"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:text="Opel"
@@ -66,6 +74,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textSize="20sp"
+                    android:text="@{car.model}"
                     app:layout_constraintBottom_toBottomOf="@+id/brand_name"
                     app:layout_constraintStart_toEndOf="@id/brand_name"
                     tools:text="Astra" />
@@ -86,6 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="20sp"
+                    android:text="@{car.modelYear.toString()}"
                     android:gravity="center"
                     tools:text="2012" />
             </LinearLayout>
@@ -107,6 +117,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:gravity="center"
+                    android:text="@{car.maxSpeed.toString()}"
+
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/model_year"
                     app:layout_constraintStart_toEndOf="@id/model_year"
@@ -129,3 +141,5 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
