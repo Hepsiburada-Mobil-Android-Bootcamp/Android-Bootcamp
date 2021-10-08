@@ -49,5 +49,7 @@
     <string name="save_exam">Kaydet</string>
     <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
     <string name="successful">Başarılı</string>
+    <string name="title_activity_yahoo_login">YahooLogin</string>
+    <string name="sign_in_with_yahoo">Sign in with yahoo</string>
     <!-- - - - - - - - - - - - - - - - -->
 </resources>
