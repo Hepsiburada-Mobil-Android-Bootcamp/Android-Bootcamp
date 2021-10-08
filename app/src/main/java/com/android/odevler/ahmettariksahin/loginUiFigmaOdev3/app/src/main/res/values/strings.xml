@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Giriş Ve Kayıt</string>
+    <string name="signUp">Kayit Ol</string>
+    <string name="signIn">Giriş Yap</string>
+</resources>
