@@ -14,6 +14,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.android.camp.R
 import com.android.camp.databinding.ActivityBilgiYarismasiBinding
+import com.android.camp.firebase.auth.email_auth.EmailLoginActivity
+import com.android.camp.firebase.auth.email_auth.SplashScreen
 import com.android.camp.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 
@@ -51,7 +53,7 @@ class BilgiYarismasiActivity : AppCompatActivity() {
             when (menu.itemId) {
                 R.id.nav_sign_out -> {
                     auth.signOut()
-                    startActivity(Intent(this, LoginActivity::class.java))
+                    startActivity(Intent(this, SplashScreen::class.java))
                     finish()
                 }
             }
