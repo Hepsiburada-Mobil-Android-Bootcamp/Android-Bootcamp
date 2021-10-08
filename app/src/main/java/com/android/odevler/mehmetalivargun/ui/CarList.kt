@@ -6,28 +6,28 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.MainActivity
 import com.android.camp.R
+import com.android.camp.databinding.ActivityCarListBinding
 import com.android.odevler.mehmetalivargun.adapter.CarAdapter
 import com.android.odevler.mehmetalivargun.data.Car
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 
 class CarList : AppCompatActivity() {
-    val fabAdd by lazy { findViewById<View>(R.id.fab_add) }
-    val recyclerView: RecyclerView by lazy { findViewById<RecyclerView>(R.id.recycler_view_car) }
+    private var binding:ActivityCarListBinding ? =null
     var fireStore:FirebaseFirestore?=null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_car_list)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_car_list)
 
         fireStore= FirebaseFirestore.getInstance()
         getCarsFireStore()
-        fabAdd.setOnClickListener {
+        binding?.fabAdd?.setOnClickListener {
             startActivity(Intent(this,AddCarActivity::class.java))
 
         }
@@ -41,8 +41,8 @@ class CarList : AppCompatActivity() {
                     list.add(car)
             }
             }
-            recyclerView.layoutManager=LinearLayoutManager(this,RecyclerView.VERTICAL,false)
-            recyclerView.adapter=CarAdapter(context = this,list)
+            binding?.recyclerViewCar?.layoutManager=LinearLayoutManager(this,RecyclerView.VERTICAL,false)
+            binding?.recyclerViewCar?.adapter=CarAdapter(context = this,list)
 
         }
     }
