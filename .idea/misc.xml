@@ -4,6 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_add_new_car.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_email_login.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_gamecenter.xml" value="0.11875" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/activity_yahoo_login.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_email_login.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_email_sign_up.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_gamecenter.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_login.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_profile.xml" value="0.27395833333333336" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/fragment_yahoo_auth.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/damla/Desktop/bootcamp/app/src/main/res/layout/galaxy_rc_view.xml" value="0.23143115942028986" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_add_airplane.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/activity_airplane.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/maver/StudioProjects/Android-Bootcamp/app/src/main/res/layout/airplane_recyclerview_row.xml" value="0.36666666666666664" />

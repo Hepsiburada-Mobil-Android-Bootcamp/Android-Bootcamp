@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">camp</string>
     <string name="title_activity_questions">Actividad de preguntas</string>
 
@@ -25,4 +25,5 @@
     <string name="sms_code_validation">el código sms debe tener 6 dígitos</string>
     <string name="enter_sms_code">Ingrese el código sms</string>
     <string name="verify">Verificar</string>
+    <string name="sign_in_with_gamecenter" tools:ignore="ExtraTranslation">iniciar sesión con Game Center</string>
 </resources>
