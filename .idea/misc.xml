@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/drawable/ic_bg.xml" value="0.1945" />
+        <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/drawable/ic_kapak_foto_raf__2x.xml" value="0.2545" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/activity_add_new_question.xml" value="0.28854166666666664" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/activity_add_new_student_exam.xml" value="0.33" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/activity_student_exam.xml" value="0.1933876811594203" />
+        <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/fragment_profile.xml" value="0.29375" />
         <entry key="..\:/Dengiz/Projects/android-bootcamp/app/src/main/res/layout/item_student_exam.xml" value="0.1933876811594203" />
         <entry key="..\:/Users/Lenovo/StudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_exam.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Lenovo/StudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_student.xml" value="0.25416666666666665" />
