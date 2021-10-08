@@ -32,12 +32,12 @@ class AddComputer : AppCompatActivity() {
     }
 
     private fun save() {
-        val flight = Computer(powerSupply = powerSupply.text.toString(),
+        val computer = Computer(powerSupply = powerSupply.text.toString(),
             screenModel = screenModel.text.toString(),
             motherBoard = motherBoard.text.toString(),
             ram = ram.text.toString(),
             keyboard = keyboard.text.toString())
-        firestore?.collection("ahmettariksahin")?.add(flight)?.addOnCompleteListener { task ->
+        firestore?.collection("ahmettariksahin")?.add(computer)?.addOnCompleteListener { task ->
             when (task.isSuccessful) {
                 true -> finish()
                 false -> Toast.makeText(this, "Pc not added:(", Toast.LENGTH_LONG).show()

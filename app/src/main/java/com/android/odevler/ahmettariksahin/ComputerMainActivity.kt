@@ -14,11 +14,11 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class ComputerMainActivity:AppCompatActivity() {
     private val recyclerView by lazy { findViewById<RecyclerView>(R.id.computers) }
-    private val addFlightButton by lazy { findViewById<Button>(R.id.addComputer) }
+    private val addComputertButton by lazy { findViewById<Button>(R.id.addComputer) }
 
     var firestore: FirebaseFirestore? = null
 
-    val computers = arrayListOf<Computer>(
+    val computers = arrayListOf(
         Computer("500w Gold+","AOC","ASUS","16GB Corsair", "RAZER"),
         Computer("600w Gold+","ASUS","MSI","32GB Corsair", "RAMPAGE"),
         Computer("750w Gold+","HP","MSI","8GB Corsair", "STEELSERIES"),
@@ -29,7 +29,7 @@ class ComputerMainActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_computer_main)
-        addFlightButton.setOnClickListener {
+        addComputertButton.setOnClickListener {
             val intent = Intent(this,AddComputer::class.java)
             startActivity(intent)
         }
@@ -48,8 +48,8 @@ class ComputerMainActivity:AppCompatActivity() {
             val list = arrayListOf<Computer>()
 
             value?.forEach { queryDocumentSnapshot ->
-                queryDocumentSnapshot.toObject(Computer::class.java).also { flight ->
-                    list.add(flight)
+                queryDocumentSnapshot.toObject(Computer::class.java).also { computers ->
+                    list.add(computers)
                 }
             }
 
