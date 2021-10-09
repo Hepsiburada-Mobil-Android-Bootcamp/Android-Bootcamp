@@ -9,9 +9,13 @@
     android:paddingTop="@dimen/fragment_vertical_margin"
     android:paddingRight="@dimen/fragment_horizontal_margin"
     android:paddingBottom="@dimen/fragment_vertical_margin"
-    tools:context=".firebase.auth.twitter.TwitterLoginFragment">
+    tools:context=".firebase.auth.twitter.TwitterLoginFragment"
+    android:background="@drawable/twitter_wallpaper">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/twitter_oJk_icon"
+        app:iconGravity="start"
         android:id="@+id/twitter_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

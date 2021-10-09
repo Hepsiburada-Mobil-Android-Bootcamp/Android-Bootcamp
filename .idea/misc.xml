@@ -4,13 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.36203703703703705" />
+        <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/drawable/yahoo.xml" value="0.2055" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/activity_add_player.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/activity_email_login.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/activity_twitter_login.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/activity_yahoo_login.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_email_login.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_login.xml" value="0.33" />
-        <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_twitter_login.xml" value="0.67" />
+        <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_twitter_login.xml" value="0.75" />
+        <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/fragment_yahoo_auth.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/user/Documents/HepsiburadaAndroidBootcamp/Android-Bootcamp/app/src/main/res/layout/item_exam.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/drawable/bg_exam_item.xml" value="0.164" />
         <entry key="app/src/main/res/drawable/ic_add.xml" value="0.1" />
