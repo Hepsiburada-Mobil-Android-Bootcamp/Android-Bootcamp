@@ -3,7 +3,7 @@
     package="com.android.camp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,11 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
+            android:name=".firebase.auth.twitter.TwitterLoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".navigationcomponent.BilgiYarismasiActivity"
             android:exported="true"
             android:label="@string/title_activity_bilgi_yarismasi"
-            android:theme="@style/Theme.Camp.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.Camp.NoActionBar"></activity>
         <activity
             android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
             android:exported="true"
@@ -33,10 +35,10 @@
             android:theme="@style/Theme.Hospital" />
         <activity
             android:name="com.android.odevler.orhunozdemir.activitiy.AddCustomerActivitity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.orhunozdemir.activitiy.CustomerListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
             android:exported="true" />
@@ -54,8 +56,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
             android:exported="true" />
@@ -68,15 +69,12 @@
         <activity
             android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
             android:exported="true" />
-
-
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
             android:exported="true" />
         <activity
             android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
             android:exported="true" />
-
         <activity
             android:name="com.android.odevler.akinkeskinbas.HomeActivity"
             android:exported="true" />
@@ -85,12 +83,10 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.mehmetalivargun.ui.CarList"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.FootballListActivity"
             android:exported="true" />
-
-
         <activity
             android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
             android:exported="true" />
@@ -99,8 +95,7 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.sahinkapan.TravelActivity"
-            android:exported="true"
-            ></activity>
+            android:exported="true" />
         <activity
             android:name=".exam.AddNewExamActivity"
             android:exported="true" />
@@ -115,12 +110,10 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".login.LoginActivity"
-            android:exported="true"
-            >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -132,10 +125,10 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
             android:exported="true" />
@@ -156,8 +149,7 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
