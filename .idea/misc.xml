@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/drawable/yahoo.xml" value="0.184" />
         <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/activity_binding_example.xml" value="0.38697916666666665" />
         <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/activity_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/activity_login_type.xml" value="0.38697916666666665" />
         <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/activity_main.xml" value="0.28894927536231885" />
+        <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/fragment_login.xml" value="0.38697916666666665" />
+        <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/fragment_login_type.xml" value="0.38697916666666665" />
         <entry key="..\:/Android Projects/android-bootcamp/app/src/main/res/layout/fragment_second.xml" value="0.2015625" />
         <entry key="..\:/Users/Lenovo/StudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_exam.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Lenovo/StudioProjects/android-bootcamp/app/src/main/res/layout/activity_add_new_student.xml" value="0.25416666666666665" />

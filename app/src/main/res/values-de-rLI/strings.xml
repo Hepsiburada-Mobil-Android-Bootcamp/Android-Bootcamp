@@ -46,4 +46,5 @@
     <string name="save_exam">" Speichern"</string>
     <string name="tum_alanlar_doldurulmalidir">" Alle Felder müssen ausgefüllt werden"</string>
     <string name="successful">Erfolgreich</string>
+    <string name="title_activity_login_type">Wählen Sie Ihren Login-Typ aus</string>
 </resources>

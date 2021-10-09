@@ -59,8 +59,6 @@
     <string name="terms">Koşullar</string>
     <string name="privacy">Gizlilik Hakkı</string>
     <string name="profile_settings">Profil Ayarları</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <!-- - - - - - - - - - - - - - - - -->
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -77,4 +75,5 @@
     <string name="dummydesc">With HepsiBurada Bootcamp Students...</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="title_activity_login_type">Select Your Login Type</string>
 </resources>
