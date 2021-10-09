@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".question.AddNewQuestionActivity">
+
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sorunuz Nedir?"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="sorunuzu giriniz.."
+        app:layout_constraintTop_toBottomOf="@+id/text_view_question" />
+
+    <TextView
+        android:id="@+id/text_View_siklar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Şıklar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_question" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_View_siklar">
+
+        <RadioButton
+            android:id="@+id/radio_group_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_text_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_group_a"
+            app:layout_constraintTop_toTopOf="@+id/radio_group_a" />
+
+        <RadioButton
+            android:id="@+id/radio_group_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_a"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_a" />
+
+        <EditText
+            android:id="@+id/edit_text_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_group_b"
+            app:layout_constraintTop_toTopOf="@+id/radio_group_b" />
+
+        <RadioButton
+            android:id="@+id/radio_group_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_b"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_b" />
+
+        <EditText
+            android:id="@+id/edit_text_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_group_c"
+            app:layout_constraintTop_toTopOf="@+id/radio_group_c" />
+
+        <RadioButton
+            android:id="@+id/radio_group_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_c"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_c" />
+
+        <EditText
+            android:id="@+id/edit_text_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio_group_d"
+            app:layout_constraintTop_toTopOf="@+id/radio_group_d" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

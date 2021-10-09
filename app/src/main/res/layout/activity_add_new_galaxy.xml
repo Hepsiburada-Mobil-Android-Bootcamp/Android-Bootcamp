@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+    tools:context="com.android.odevler.nahitfidanci.activities.AddNewGalaxyActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/newGalaxyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Galaxy name"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/newGalaxyLightYearDistance"/>
+
+    <EditText
+        android:id="@+id/newGalaxyLightYearDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Galaxy distance"
+        app:layout_constraintTop_toBottomOf="@+id/newGalaxyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+     />
+    <EditText
+        android:id="@+id/newGalaxyKnownNumOfStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Galaxy known number of stars"
+        app:layout_constraintTop_toBottomOf="@+id/newGalaxyLightYearDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:id="@+id/newGalaxyExploredYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Galaxy explored year"
+        app:layout_constraintTop_toBottomOf="@+id/newGalaxyKnownNumOfStars"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/saveNewGalaxy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

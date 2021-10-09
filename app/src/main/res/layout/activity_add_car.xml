@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.odevler.mehmetalivargun.ui.AddCarActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/brandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Brand Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model Name"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/brandName"
+        app:layout_constraintTop_toBottomOf="@+id/brandName" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/modelYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model Year"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/modelName"
+        app:layout_constraintTop_toBottomOf="@+id/modelName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/maxSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Max Speed"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/modelYear"
+        app:layout_constraintTop_toBottomOf="@+id/modelYear">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
