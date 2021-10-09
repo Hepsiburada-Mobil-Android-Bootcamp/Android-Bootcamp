@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">camp</string>
+    <string name="title_activity_questions">QuestionsActivity</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="content_description">Content Description</string>
+    <string name="song_name">Song Name</string>
+    <string name="artists_name">Artists Name</string>
+    <string name="duration_time">Duration Time</string>
+    <string name="year">Year</string>
+    <string name="save">Save</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_song">Add Song</string>
+    <string name="delete_all">Delete All</string>
+    <string name="duration">%d:%d</string>
+    <string name="finish_exam">End Exam</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login">Login</string>
+    <string name="phone_number_format">phone number format is 5555555555</string>
+    <string name="sms_code_validation">SMS code must be 6 digit</string>
+    <string name="enter_sms_code">Enter sms Code</string>
+    <string name="verify">Verify</string>
+</resources>
