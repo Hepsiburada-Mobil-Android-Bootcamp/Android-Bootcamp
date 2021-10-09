@@ -16,10 +16,10 @@
         <activity
             android:name=".login.LoginActivity"
             android:exported="true">
-           <!-- <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity
             android:name="com.android.firebase.auth.yahoo.YahooLogin"
@@ -38,10 +38,6 @@
         <activity
             android:name=".firebase.auth.twitter.TwitterLoginActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
