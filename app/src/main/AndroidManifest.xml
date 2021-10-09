@@ -36,6 +36,11 @@
             android:exported="true"/>
 
         <activity
+            android:name=".firebase.auth.twitter.TwitterLoginActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
             android:name=".navigationcomponent.BilgiYarismasiActivity"
             android:exported="true"
             android:label="@string/title_activity_bilgi_yarismasi"
@@ -133,8 +138,7 @@
             android:exported="true" />
         <activity
             android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name="com.android.odevler.burakisik.activity.AttendersActivity"
             android:exported="true" />
