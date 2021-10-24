@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">camp</string>
+    <string name="title_activity_questions">Aktibidad Ng Mga Tanong</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Unang Fragment</string>
+    <string name="second_fragment_label">Pangalawang Fragment</string>
+    <string name="next">Susunod</string>
+    <string name="previous">Nakaraang</string>
+
+    <string name="hello_first_fragment">Kumusta unang fragment</string>
+    <string name="hello_second_fragment">Kumusta pangalawang fragment. Arg: %1$s</string>
+    <string name="content_description">Paglalarawan Ng Nilalaman</string>
+    <string name="song_name">Pangalan Ng Kanta</string>
+    <string name="artists_name">Pangalan ng Artist</string>
+    <string name="duration_time">Tagal ng Oras</string>
+    <string name="year">Buwan</string>
+    <string name="save">i-Save</string>
+    <string name="add_text">Magdagdag ng Teksto</string>
+    <string name="add_song">Magdagdag ng isang kanta Oktubre</string>
+    <string name="delete_all">Tanggalin Ang Lahat Ng Ito</string>
+    <string name="duration">%d:%d</string>
+    <string name="finish_exam">Tapusin Ang Pagsusulit</string>
+    <string name="phone_number">numero ng telepono</string>
+    <string name="login">Pagpasok</string>
+    <string name="phone_number_format">dapat itong nasa format na 5321112233.</string>
+    <string name="sms_code_validation">ang sms code ay dapat na 6 na numero</string>
+    <string name="welcome_user">maligayang pagdating sa 1%$s!</string>
+    <string name="enter_sms_code">Ipasok ang sms Code</string>
+    <string name="verify">Patunayan</string>
+</resources>
