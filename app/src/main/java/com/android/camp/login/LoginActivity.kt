@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         if (auth.currentUser != null) {
-            startActivity(Intent(this, BilgiYarismasiActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

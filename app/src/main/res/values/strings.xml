@@ -49,5 +49,8 @@
     <string name="save_exam">Kaydet</string>
     <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
     <string name="successful">Başarılı</string>
+
+    <string name="product_list">Product List</string>
+    <string name="product_details">Product Details</string>
     <!-- - - - - - - - - - - - - - - - -->
 </resources>

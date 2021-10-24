@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.camp.R
+import com.android.camp.firestore.FirestoreHelper
 import com.android.odevler.ayse_senses.data.model.Note
 import com.android.odevler.ayse_senses.note.AddNoteActivity
 import com.android.odevler.ayse_senses.note.NoteAdapter
@@ -20,14 +21,12 @@ class NoteActivity : AppCompatActivity() {
 
     private val fab by lazy { findViewById<View>(R.id.fab) }
     private val recyclerView by lazy { findViewById<RecyclerView>(R.id.recycler_view) }
-    private var firestore: FirebaseFirestore? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ayse_home_note_activity)
 
         initNote()
-        firestore = FirebaseFirestore.getInstance()
 
         fab.setOnClickListener {
             val intent = Intent(this, AddNoteActivity::class.java)
@@ -63,33 +62,11 @@ class NoteActivity : AppCompatActivity() {
     }
 
     private fun lastNotes() {
-        firestore?.collection("aysesenses")?.orderBy("date", Query.Direction.DESCENDING)
-            ?.addSnapshotListener { value, error ->
-
-                val noteList = arrayListOf<Note>()
-
-                value?.forEach { queryDocumentSnapshot ->
-                    queryDocumentSnapshot.toObject(Note::class.java).also { note ->
-                        noteList.add(note)
-                    }
-                }
-                recyclerView.adapter = NoteAdapter(this, noteList)
-            }
+        recyclerView.adapter = NoteAdapter(FirestoreHelper().getNoteQueryOrderByDate())
 
     }
 
     private fun bindNote() {
-        firestore?.collection("aysesenses")?.orderBy("priority", Query.Direction.DESCENDING)
-            ?.addSnapshotListener { value, error ->
-
-                val noteList = arrayListOf<Note>()
-
-                value?.forEach { queryDocumentSnapshot ->
-                    queryDocumentSnapshot.toObject(Note::class.java).also { note ->
-                        noteList.add(note)
-                    }
-                }
-                recyclerView.adapter = NoteAdapter(this, noteList)
-            }
+        recyclerView.adapter = NoteAdapter(FirestoreHelper().getNoteQueryOrderByPriority())
     }
 }

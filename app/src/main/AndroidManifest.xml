@@ -3,8 +3,11 @@
     package="com.android.camp">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.BIND_CARRIER_MESSAGING_CLIENT_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -14,147 +17,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Camp">
         <activity
-            android:name=".navigationcomponent.BilgiYarismasiActivity"
-            android:exported="true"
-            android:label="@string/title_activity_bilgi_yarismasi"
-            android:theme="@style/Theme.Camp.NoActionBar" >
-        </activity>
-        <activity
-            android:name="com.android.odevler.oguzhanyildirim.view.StarterActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Hospital" />
-        <activity
-            android:name="com.android.odevler.oguzhanyildirim.view.HospitalListActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Hospital" />
-        <activity
-            android:name="com.android.odevler.oguzhanyildirim.view.AddHospitalActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Hospital" />
-        <activity
-            android:name="com.android.odevler.orhunozdemir.activitiy.AddCustomerActivitity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.android.odevler.orhunozdemir.activitiy.CustomerListActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.android.odevler.edakuntalp.player.AddPlayerActivity"
+            android:name="com.android.contentprovider.ChatActivity"
             android:exported="true" />
-        <activity
-            android:name="com.android.odevler.sahranurer.adapter.AddBookActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.sahranurer.adapter.BookActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.cagrikilic.PaperListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AddAirplaneActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+
+        <receiver
+            android:name="com.android.contentprovider.IncomingSMSReceiver"
+            android:enabled="true"
             android:exported="true">
-        </activity>
-        <activity
-            android:name="com.android.odevler.abdulwahid.ui.SongListActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.abdulwahid.ui.AddNewSongActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serkanozdemir.flights.AddNewFlight"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serkanozdemir.FlightMainActivity"
-            android:exported="true" />
-
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
 
         <activity
-            android:name="com.android.odevler.akinkeskinbas.rehber.AddUserActivity"
+            android:name="com.android.contentprovider.CallActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.odevler.akinkeskinbas.rehber.RehberActivity"
-            android:exported="true" />
-
-        <activity
-            android:name="com.android.odevler.akinkeskinbas.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.mehmetalivargun.ui.AddCarActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.mehmetalivargun.ui.CarList"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.android.odevler.mehmet_serkan_guzel.FootballListActivity"
-            android:exported="true" />
-
-
-        <activity
-            android:name="com.android.odevler.mehmet_serkan_guzel.AddNewFootballActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.sahinkapan.AddTravelActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.sahinkapan.TravelActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".exam.AddNewExamActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.AddNewQuestionActivity"
-            android:exported="true" />
-        <activity
-            android:name=".question.QuestionsActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.talhadengiz.ui.AddNewStudentExam"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.talhadengiz.ui.StudentExamActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".login.LoginActivity"
+            android:name="com.android.contentprovider.SMSActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.android.odevler.damlaAlpan.car.AddNewCarActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.damlaAlpan.car.CarsActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.android.odevler.ebraryucel.airplane.AirplaneActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name="com.android.odevler.arifumutsepetci.data.store.StoresActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serhadmert.ui.HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.serhadmert.ui.AddAnime"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.ayse_senses.note.AddNoteActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.seymafirat.student.AddNewStudentActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.seymafirat.student.StudentActivity"
-            android:exported="true" />
-        <activity
-            android:name="com.android.odevler.ayse_senses.utils.NoteActivity"
-            android:exported="true">
         </activity>
     </application>
 

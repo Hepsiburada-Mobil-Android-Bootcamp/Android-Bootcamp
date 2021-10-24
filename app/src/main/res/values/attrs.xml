@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CampHeaderTitle">
+        <attr name="title" format="string" />
+        <attr name="subTitle" format="string" />
+        <attr name="isVisibilityBack">
+            <enum name="show" value="0" />
+            <enum name="hide" value="8" />
+        </attr>
+        <attr name="developerType">
+            <enum name="IOS" value="0" />
+            <enum name="Android" value="1" />
+            <enum name="WEB" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -27,6 +27,7 @@ class PaperListActivity : AppCompatActivity() {
     }
     private fun getPaperList() {
         firestore?.collection("cagrikilic")?.get()?.addOnSuccessListener {
+
             snapshot ->
                 snapshot.toObjects(Paper::class.java)?.let { papers ->
                 recyclerView.adapter = PaperListAdapter(papers as ArrayList<Paper>)

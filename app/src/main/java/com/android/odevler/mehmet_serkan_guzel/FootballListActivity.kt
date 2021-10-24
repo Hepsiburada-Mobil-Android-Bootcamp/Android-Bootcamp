@@ -13,7 +13,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 
 class FootballListActivity : AppCompatActivity() {
-    private  val addNewFootball by lazy {
+    private val addNewFootball by lazy {
         findViewById<View>(R.id.fabFootball)
     }
     private val recyclerViewFootball by lazy {
@@ -35,18 +35,12 @@ class FootballListActivity : AppCompatActivity() {
     }
 
     private fun initFootball() {
-        recyclerViewFootball.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerViewFootball.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
     }
 
     private fun bindFootball() {
-        firestore?.collection("MehmetSerkanGuzel")?.addSnapshotListener { value, _ ->
-            val list = arrayListOf<Football>()
-            value?.forEach { queryDocumentSnapshot ->
-                queryDocumentSnapshot.toObject(Football::class.java).also { football ->
-                    list.add(football)
-                }
-            }
-            recyclerViewFootball.adapter = FootballAdapter(list)
-        }
+        val query = firestore?.collection("MehmetSerkanGuzel")
+        recyclerViewFootball.adapter = FootballAdapter(query)
     }
 }

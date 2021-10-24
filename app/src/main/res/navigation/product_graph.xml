@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_graph"
+    app:startDestination="@id/productListfragment">
+
+    <fragment
+        android:id="@+id/productListfragment"
+        android:name="com.android.camp.amazon.presentation.fragment.ProductListfragment"
+        android:label="ProductListfragment"
+        tools:layout="@layout/fragment_product_list">
+        <action
+            android:id="@+id/action_productListfragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+        <action
+            android:id="@+id/action_productListfragment_to_addNewProductFragment"
+            app:destination="@id/addNewProductFragment" />
+        <action
+            android:id="@+id/action_productListfragment_to_deleteProductFragment"
+            app:destination="@id/deleteProductFragment" />
+        <action
+            android:id="@+id/action_productListfragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.android.camp.amazon.presentation.fragment.ProductDetailsFragment"
+        android:label="ProductDetailsFragment"
+        tools:layout="@layout/fragment_product_details">
+        <action
+            android:id="@+id/action_productDetailsFragment_to_basketFragment"
+            app:destination="@id/basketFragment" />
+        <action
+            android:id="@+id/action_productDetailsFragment_to_deleteProductFragment"
+            app:destination="@id/deleteProductFragment" />
+        <action
+            android:id="@+id/action_productDetailsFragment_to_addFavoriteFragment"
+            app:destination="@id/addFavoriteFragment" />
+
+        <argument
+            android:name="product_id"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewProductFragment"
+        android:name="com.android.camp.amazon.presentation.fragment.AddNewProductFragment"
+        android:label="AddNewProductFragment"
+        tools:layout="@layout/fragment_product_new" />
+    <fragment
+        android:id="@+id/addFavoriteFragment"
+        android:name="com.android.camp.amazon.presentation.fragment.FavoriteProductFragment"
+        android:label="AddFavoriteFragment"
+        tools:layout="@layout/fragment_product_favorite" >
+
+        <argument
+            android:name="product_id"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.android.camp.amazon.presentation.fragment.BasketFragment"
+        android:label="BasketFragment" />
+    <fragment
+        android:id="@+id/deleteProductFragment"
+        android:name="com.android.camp.amazon.presentation.fragment.DeleteProductFragment"
+        android:label="DeleteProductFragment" />
+</navigation>
