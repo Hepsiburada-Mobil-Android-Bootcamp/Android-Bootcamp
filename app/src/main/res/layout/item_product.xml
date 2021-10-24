@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="product"
+            type="com.android.camp.amazon.data.model.Product" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/image_view_favorite"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_favorite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:tint="@color/green" />
+
+                <ImageView
+                    android:id="@+id/image_view_product"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_favorite"
+                    tools:src="@drawable/bg_answer" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@{product.name}"
+                    app:layout_constraintEnd_toEndOf="@+id/image_view_product"
+                    app:layout_constraintStart_toStartOf="@+id/image_view_product"
+                    app:layout_constraintTop_toBottomOf="@+id/image_view_product"
+                    tools:text="Ürün Adııı" />
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateOnly="false"
+                    android:numStars="5"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    app:layout_constraintEnd_toEndOf="@+id/image_view_product"
+                    app:layout_constraintStart_toStartOf="@+id/image_view_product"
+                    app:layout_constraintTop_toBottomOf="@+id/price_text_view"
+                    tools:rating="3.5" />
+
+
+                <com.sample.price.PriceTextView
+                    android:id="@+id/price_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/text_view_product_name"
+                    app:layout_constraintStart_toStartOf="@+id/text_view_product_name"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_product_name"
+                    app:price="@{product.price}"
+                    app:priceColorTint="@color/green"
+                    app:priceType="tl" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

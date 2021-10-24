@@ -10,5 +10,6 @@
     <color name="default_answer_color">#1287A8</color>
     <color name="yellow">#FFFF00</color>
     <color name="green">#008000</color>
+    <color name="red">#F34812</color>
     <color name="blue">#0E86D4</color>
 </resources>

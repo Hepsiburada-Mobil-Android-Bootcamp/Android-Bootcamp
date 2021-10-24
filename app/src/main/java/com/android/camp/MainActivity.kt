@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindExams() {
+        /*
         firestore?.collection("exam")?.orderBy("date")?.addSnapshotListener { value, error ->
             val list = arrayListOf<Exam>()
 
@@ -87,5 +88,11 @@ class MainActivity : AppCompatActivity() {
 
             recyclerViewExam.adapter = ExamAdapter(this, list)
         }
+        */
+
+
+        val queryExam = firestore?.collection("exam")?.orderBy("date")
+        val adapter = ExamAdapter(this, queryExam)
+        recyclerViewExam.adapter = adapter
     }
 }

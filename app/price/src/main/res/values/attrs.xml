@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PriceTextView">
+        <attr name="price" format="string" />
+        <attr name="priceColorTint" format="color" />
+        <attr name="priceType">
+            <enum name="tl" value="0" />
+            <enum name="dolar" value="1" />
+            <enum name="euro" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

@@ -49,38 +49,8 @@
     <string name="save_exam">Kaydet</string>
     <string name="tum_alanlar_doldurulmalidir">Tüm alanlar doldurulmalıdır !</string>
     <string name="successful">Başarılı</string>
-    <string name="email">E-mail</string>
-    <string name="username">Kullanıcı Adı</string>
-    <string name="password">Şifre</string>
-    <string name="location">Konum</string>
-    <string name="gmail">Gmail ile bağlan</string>
-    <string name="twitter">Twitter ile bağlan</string>
-    <string name="facebook">Facebook ile bağlan</string>
-    <string name="terms">Koşullar</string>
-    <string name="privacy">Gizlilik Hakkı</string>
-    <string name="profile_settings">Profil Ayarları</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="product_list">Product List</string>
+    <string name="product_details">Product Details</string>
     <!-- - - - - - - - - - - - - - - - -->
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="kim_500_milyon_ister">Kim 500 Milyon İster</string>
-
-    <string name="email_login">Email</string>
-    <string name="password_email_login">Password</string>
-    <string name="confirm_password_email">Confirm Password</string>
-    <string name="signup_email">Signup</string>
-    <string name="login_email_buton">Login</string>
-    <string name="or_login_with_email">or login with</string>
-    <string name="signuptext_email">Signup</string>
-    <string name="or_signup_with_email">or signup with</string>
-    <string name="dummydesc">With HepsiBurada Bootcamp Students...</string>
-    <string name="already_have_an_account">Already have an account?</string>
-    <string name="not_a_member_yet">Not a member yet?</string>
-    <string name="AttenderFirstName">Attender First Name</string>
-    <string name="AttenderLastName">Attender Last Name</string>
-    <string name="AttenderEmail">Attender Email Adress</string>
-    <string name="AttenderEventName">Event Name</string>
-
-
 </resources>
