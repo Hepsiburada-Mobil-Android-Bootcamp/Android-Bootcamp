@@ -30,10 +30,11 @@
 * Custom Components
 * Android Library and Maven Publish
 * SOLID,
-* Content Provider
-* Receiver
-* Room db, Entity, DAO
-* Coroutine, Scope, Dispatchers, async, await, suspend functions
+* Permissions: READ_SMS, SMS_RECEIVED
+* Content Provider: SMS Provider
+* BroadcastReceiver: Sms Received
+* Room db, Entity, DAO and db dumb: using DB Browser
+* Coroutine, Scope, Dispatchers, async, await, suspend functions, runBlocking
 * Shared Pref, Encrypted
 * Notification Channel, Notification Manager, Notification
 
