@@ -28,10 +28,12 @@
 * MVVM => data, domain, presentation
 * MVP => Model View presenter
 * Custom Components
+* Android Library and Maven Publish
 * SOLID,
 * Content Provider
-* REceiver
-* Room
-* coroutine
+* Receiver
+* Room db, Entity, DAO
+* Coroutine, Scope, Dispatchers, async, await, suspend functions
 * Shared Pref, Encrypted
+* Notification Channel, Notification Manager, Notification
 
